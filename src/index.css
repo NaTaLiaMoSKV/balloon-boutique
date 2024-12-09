@@ -2,14 +2,81 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    background-color: #FFF;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+p, h1, h2, h3, h4, h5, h6, li, ul {
+  margin: 0;
+  padding: 0;
+}
+
+li, ul {
+  list-style-type: none;
+}
+
+a {
+  font-family: "Lora", serif;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+button {
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: "Lora",serif;
+  transition: all 0.3s ease;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+section {
+ width: calc(100% - 30px);
+ margin-left: auto;
+ margin-right: auto;
+}
+
+ @media screen and (min-width: 480px) {
+  section {
+    width: 440px;
+  }
+ }
+
+ @media screen and (min-width: 768px) {
+  section {
+    width: 704px;
+  }
+ }
+
+ @media screen and (min-width: 1200px) {
+   section {
+    width: 1120px;
+   }
+ }
