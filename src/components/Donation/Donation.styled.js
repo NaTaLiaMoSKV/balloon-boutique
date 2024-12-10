@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const DonationContainer = styled.div`
   background: linear-gradient(
     90deg,
-    rgb(81 61 61) 0%,
+    rgb(122 91 91) 0%,
     rgb(159 116 116) 60%,
     rgb(186 148 148) 100%
   );

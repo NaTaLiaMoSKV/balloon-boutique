@@ -12,6 +12,7 @@ export const FooterContainer = styled.footer`
 
 export const FooterSection = styled.section`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 30px;
@@ -35,7 +36,7 @@ export const LogoWrapper = styled.div`
 `;
 
 export const ContactsWrapper = styled.div`
-  dispaly: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   min-width: 160px;
@@ -43,19 +44,31 @@ export const ContactsWrapper = styled.div`
   font-size: 18px;
 
   a {
+    position: relative;
     font-size: smaller;
     font-style: italic;
-    text-decoration: underline;
+    padding-bottom: 2px;
+  }
+
+  a::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #fafafa;
+    transition: transform 0.3s ease, filter 0.3s ease;
   }
 
   a:hover,
   a:focus {
     color: #fff;
-    text-shadow: 0px 1px 3px #fafafa;
+    text-shadow: 0px 1px 3px #fff;
 
-    &::before {
-      transform: scale(1.05);
-      filter: brightness(1.2);
+    &::after {
+      transform: scale(1.07);
+      color: #fff;
     }
   }
 

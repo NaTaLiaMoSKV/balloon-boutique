@@ -1,13 +1,34 @@
 {
   "files": {
-    "main.css": "/balloon-boutique/static/css/main.7acaea2f.css",
-    "main.js": "/balloon-boutique/static/js/main.07d3183d.js",
+    "main.css": "/balloon-boutique/static/css/main.4b7bbd4c.css",
+    "main.js": "/balloon-boutique/static/js/main.cd713dde.js",
+    "static/media/user7.jpg": "/balloon-boutique/static/media/user7.53f46b50034e635db71d.jpg",
+    "static/media/3.jpg": "/balloon-boutique/static/media/3.0e6836971c391e57584f.jpg",
+    "static/media/2.jpg": "/balloon-boutique/static/media/2.5dbf6c023f8f08f08de5.jpg",
+    "static/media/hero.jpeg": "/balloon-boutique/static/media/hero.a347768fcdbd54d0c245.jpeg",
+    "static/media/1.jpg": "/balloon-boutique/static/media/1.22ec81e5915d24ed18e0.jpg",
+    "static/media/user5.jpg": "/balloon-boutique/static/media/user5.53ef973d2f4a8cfce084.jpg",
+    "static/media/3.png": "/balloon-boutique/static/media/3.9cd7e0c9150892d3e345.png",
+    "static/media/1.png": "/balloon-boutique/static/media/1.bbf390eaa69141017fcc.png",
+    "static/media/2.png": "/balloon-boutique/static/media/2.aa4aacc34f11d823fffb.png",
+    "static/media/user6.jpg": "/balloon-boutique/static/media/user6.7a396d7f49ae206361af.jpg",
+    "static/media/hero-mobile.jpg": "/balloon-boutique/static/media/hero-mobile.11f1d348d6f447493939.jpg",
+    "static/media/history-desktop.png": "/balloon-boutique/static/media/history-desktop.3376690884fe5597425c.png",
+    "static/media/user4.jpg": "/balloon-boutique/static/media/user4.10dbb4c66070cd942112.jpg",
+    "static/media/4.jpg": "/balloon-boutique/static/media/4.553ca2e2ef905b578980.jpg",
+    "static/media/user3.jpg": "/balloon-boutique/static/media/user3.44b4a91a67a76443e4a1.jpg",
+    "static/media/5.jpg": "/balloon-boutique/static/media/5.06f413d95516f46a4798.jpg",
+    "static/media/user2.jpg": "/balloon-boutique/static/media/user2.55c294fdeef1744c896e.jpg",
+    "static/media/history-mobile.png": "/balloon-boutique/static/media/history-mobile.5396b9e14a360c22245e.png",
+    "static/media/6.jpg": "/balloon-boutique/static/media/6.d33483852051f4c2d0ac.jpg",
+    "static/media/user1.jpg": "/balloon-boutique/static/media/user1.d874b001657fb0c0b4da.jpg",
+    "static/media/balloon.png": "/balloon-boutique/static/media/balloon.b1c19518bb5afc305aba.png",
     "index.html": "/balloon-boutique/index.html",
-    "main.7acaea2f.css.map": "/balloon-boutique/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/balloon-boutique/static/js/main.07d3183d.js.map"
+    "main.4b7bbd4c.css.map": "/balloon-boutique/static/css/main.4b7bbd4c.css.map",
+    "main.cd713dde.js.map": "/balloon-boutique/static/js/main.cd713dde.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/css/main.4b7bbd4c.css",
+    "static/js/main.cd713dde.js"
   ]
 }

@@ -31,7 +31,7 @@ export const StepsList = styled.ul`
 
   @media (min-width: 768px) {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
   }
 `;
 
@@ -97,8 +97,8 @@ export const StepImage = styled.img`
   }
 
   @media (min-width: 1200px) {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 90%;
     border-radius: 40px;
     margin-bottom: 15px;
   }

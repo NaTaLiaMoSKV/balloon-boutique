@@ -86,7 +86,8 @@ export const List = styled.ul`
 export const Link = styled(NavLink)`
   color: #fafafa;
   font-size: 20px;
-  text-decoration: none;
+  padding-bottom: 2px;
+  position: relative;
 
   &::before {
     content: "";
@@ -100,14 +101,28 @@ export const Link = styled(NavLink)`
     transition: transform 0.3s ease, filter 0.3s ease;
   }
 
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 0;
+    width: calc(100% - 40px);
+    height: 1px;
+    background-color: #fafafa;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
   &:hover,
   &:focus {
     color: #fff;
     text-shadow: 0px 1px 3px #fff;
 
     &::before {
-      transform: scale(1.05);
-      filter: brightness(1.2);
+      transform: scale(1.07);
+    }
+
+    &::after {
+      transform: scale(1.07);
     }
   }
 

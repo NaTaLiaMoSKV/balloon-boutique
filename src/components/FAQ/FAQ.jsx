@@ -35,7 +35,7 @@ export const FAQ = () => {
 
     return (
         <section id="faq">
-            <h2 className="faq__title scroll-element scroll-element--from-bottom">FAQ</h2>
+            <h2 className="faq__title scroll-element scroll-element--from-bottom"><span>&#9135;</span> FAQ <span>&#9135;</span></h2>
 
             {faqData.map((item, index) => (
                 <div className="faq__item scroll-element scroll-element--from-bottom" key={index}>
