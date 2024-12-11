@@ -1,0 +1,324 @@
+{
+  "thematic": {
+    "birthday": {
+      "balloons": [
+        {
+          "id": 101,
+          "title": "Набір №1 на День народження",
+          "price": 150,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733847747/1_pjuaqe.jpg"
+        },
+        {
+          "id": 102,
+          "title": "Набір №2 на День народження",
+          "price": 160,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733847747/2_bisllq.jpg"
+        },
+        {
+          "id": 103,
+          "title": "Набір №3 на День народження",
+          "price": 170,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733847748/3_sddnut.jpg"
+        },
+        {
+          "id": 104,
+          "title": "Набір №4 на День народження",
+          "price": 180,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733847748/5_ajeug1.jpg"
+        },
+        {
+          "id": 105,
+          "title": "Набір №5 на День народження",
+          "price": 190,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733847748/4_d157zg.jpg"
+        },
+        {
+          "id": 106,
+          "title": "Набір №6 на День народження",
+          "price": 200,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733847748/6_bzvz4a.jpg"
+        },
+        {
+          "id": 107,
+          "title": "Набір №7 на День народження",
+          "price": 210,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733847748/7_eydd3i.jpg"
+        },
+        {
+          "id": 108,
+          "title": "Набір №8 на День народження",
+          "price": 220,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733847749/8_mnzpf4.jpg"
+        },
+        {
+          "id": 109,
+          "title": "Набір №9 на День народження",
+          "price": 230,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733847749/9_cfi5pv.jpg"
+        },
+        {
+          "id": 110,
+          "title": "Набір №10 на День народження",
+          "price": 240,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733847750/10_zhs8kw.jpg"
+        }
+      ]
+    },
+    "discharge": {
+      "balloons": [
+        {
+          "id": 111,
+          "title": "Набір №1 на виписку",
+          "price": 150,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848322/1_b1ywya.jpg"
+        },
+        {
+          "id": 112,
+          "title": "Набір №2 на виписку",
+          "price": 160,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848323/2_zdbqwy.jpg"
+        },
+        {
+          "id": 113,
+          "title": "Набір №3 на виписку",
+          "price": 170,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848323/3_u5iakf.jpg"
+        },
+        {
+          "id": 114,
+          "title": "Набір №4 на виписку",
+          "price": 180,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848324/4_xpei52.jpg"
+        },
+        {
+          "id": 115,
+          "title": "Набір №5 на виписку",
+          "price": 190,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848324/5_soj2tv.jpg"
+        },
+        {
+          "id": 116,
+          "title": "Набір №6 на виписку",
+          "price": 200,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848325/6_q8qkmy.jpg"
+        },
+        {
+          "id": 117,
+          "title": "Набір №7 на виписку",
+          "price": 210,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848326/7_f0nqtz.jpg"
+        },
+        {
+          "id": 118,
+          "title": "Набір №8 на виписку",
+          "price": 220,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848327/8_yigbzj.jpg"
+        },
+        {
+          "id": 119,
+          "title": "Набір №9 на виписку",
+          "price": 230,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848328/9_yauscp.jpg"
+        },
+        {
+          "id": 120,
+          "title": "Набір №10 на виписку",
+          "price": 240,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848329/10_lsy2yh.jpg"
+        }
+      ]
+    },
+    "new-year": {
+      "balloons": [
+        {
+          "id": 121,
+          "title": "Набір №1 на Новий рік",
+          "price": 150,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848429/1_gieklm.jpg"
+        },
+        {
+          "id": 122,
+          "title": "Набір №2 на Новий рік",
+          "price": 160,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848430/2_u6seb6.jpg"
+        },
+        {
+          "id": 123,
+          "title": "Набір №3 на Новий рік",
+          "price": 170,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848432/3_aaxwyf.jpg"
+        },
+        {
+          "id": 124,
+          "title": "Набір №4 на Новий рік",
+          "price": 180,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848433/4_em8ofs.jpg"
+        },
+        {
+          "id": 125,
+          "title": "Набір №5 на Новий рік",
+          "price": 190,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848434/5_zjq53c.jpg"
+        },
+        {
+          "id": 126,
+          "title": "Набір №6 на Новий рік",
+          "price": 200,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848436/6_g0bgks.jpg"
+        },
+        {
+          "id": 127,
+          "title": "Набір №7 на Новий рік",
+          "price": 210,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848437/7_bzcvwl.jpg"
+        },
+        {
+          "id": 128,
+          "title": "Набір №8 на Новий рік",
+          "price": 220,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848439/8_lsm5u2.jpg"
+        },
+        {
+          "id": 129,
+          "title": "Набір №9 на Новий рік",
+          "price": 230,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848440/9_a8m6na.jpg"
+        },
+        {
+          "id": 130,
+          "title": "Набір №10 на Новий рік",
+          "price": 240,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848441/10_wips7q.jpg"
+        }
+      ]
+    },
+    "valentine": {
+      "balloons": [
+        {
+          "id": 131,
+          "title": "Набір №1 на 8 березня",
+          "price": 150,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848358/1_bxyn6g.jpg"
+        },
+        {
+          "id": 132,
+          "title": "Набір №2 на 8 березня",
+          "price": 160,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848358/2_jvoic2.jpg"
+        },
+        {
+          "id": 133,
+          "title": "Набір №3 на 8 березня",
+          "price": 170,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848359/3_d5qxp7.jpg"
+        },
+        {
+          "id": 134,
+          "title": "Набір №4 на 8 березня",
+          "price": 180,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848360/4_w88qye.jpg"
+        },
+        {
+          "id": 135,
+          "title": "Набір №5 на 8 березня",
+          "price": 190,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848361/5_gl1gj5.jpg"
+        },
+        {
+          "id": 136,
+          "title": "Набір №1 на День закоханих",
+          "price": 200,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848362/6_jgclzr.jpg"
+        },
+        {
+          "id": 137,
+          "title": "Набір №2 на День закоханих",
+          "price": 210,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848363/7_tmyxu7.jpg"
+        },
+        {
+          "id": 138,
+          "title": "Набір №3 на День закоханих",
+          "price": 220,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848364/8_mrcgx7.jpg"
+        },
+        {
+          "id": 139,
+          "title": "Набір №4 на День закоханих",
+          "price": 230,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848365/9_pojgvm.jpg"
+        },
+        {
+          "id": 140,
+          "title": "Набір №5 на День закоханих",
+          "price": 240,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848366/10_v2cabh.jpg"
+        }
+      ]
+    },
+     "gender-party": {
+      "balloons": [
+        {
+          "id": 141,
+          "title": "Набір №1 на гендер-паті",
+          "price": 150,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848402/1_diohrm.jpg"
+        },
+        {
+          "id": 142,
+          "title": "Набір №2 на гендер-паті",
+          "price": 160,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848403/2_ulhtsr.jpg"
+        },
+        {
+          "id": 143,
+          "title": "Набір №3 на гендер-паті",
+          "price": 170,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848404/3_jwvdfd.jpg"
+        },
+        {
+          "id": 144,
+          "title": "Набір №4 на гендер-паті",
+          "price": 180,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848405/4_gati8z.jpg"
+        },
+        {
+          "id": 145,
+          "title": "Набір №5 на гендер-паті",
+          "price": 190,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848406/5_nbohub.jpg"
+        },
+        {
+          "id": 146,
+          "title": "Набір №6 на гендер-паті",
+          "price": 200,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848407/6_ttmffq.jpg"
+        },
+        {
+          "id": 147,
+          "title": "Набір №7 на гендер-паті",
+          "price": 210,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848409/7_vig4y5.jpg"
+        },
+        {
+          "id": 148,
+          "title": "Набір №8 на гендер-паті",
+          "price": 220,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848410/8_fxyd4k.jpg"
+        },
+        {
+          "id": 149,
+          "title": "Набір №9 на гендер-паті",
+          "price": 230,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848411/9_jqszai.jpg"
+        },
+        {
+          "id": 150,
+          "title": "Набір №10 на гендер-паті",
+          "price": 240,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848413/10_qykdpo.jpg"
+        }
+      ]
+    }
+  }
+}

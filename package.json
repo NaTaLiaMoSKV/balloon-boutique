@@ -4,6 +4,8 @@
   "private": true,
   "homepage": "https://NaTaLiaMoSKV.github.io/balloon-boutique/",
   "dependencies": {
+    "@cloudinary/react": "^1.13.1",
+    "@cloudinary/url-gen": "^1.21.0",
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
