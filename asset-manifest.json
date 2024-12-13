@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/balloon-boutique/static/css/main.820a19d2.css",
-    "main.js": "/balloon-boutique/static/js/main.f6c964f0.js",
+    "main.js": "/balloon-boutique/static/js/main.14b001df.js",
     "static/media/user7.jpg": "/balloon-boutique/static/media/user7.53f46b50034e635db71d.jpg",
     "static/media/3.jpg": "/balloon-boutique/static/media/3.0e6836971c391e57584f.jpg",
     "static/media/2.jpg": "/balloon-boutique/static/media/2.5dbf6c023f8f08f08de5.jpg",
@@ -34,15 +34,16 @@
     "static/media/user1.jpg": "/balloon-boutique/static/media/user1.d874b001657fb0c0b4da.jpg",
     "static/media/kids.jpg": "/balloon-boutique/static/media/kids.aeb529f198c13954b7da.jpg",
     "static/media/filled.jpg": "/balloon-boutique/static/media/filled.4b877b855a060237a059.jpg",
+    "static/media/logo-balloons.png": "/balloon-boutique/static/media/logo-balloons.bdc327b518bb096e7713.png",
     "static/media/numbers.jpg": "/balloon-boutique/static/media/numbers.77d1031ed289c2fd67b0.jpg",
     "static/media/balloon.png": "/balloon-boutique/static/media/balloon.b1c19518bb5afc305aba.png",
     "static/media/with-patterns.jpg": "/balloon-boutique/static/media/with-patterns.d2e140f9cb20b2c36e64.jpg",
     "index.html": "/balloon-boutique/index.html",
     "main.820a19d2.css.map": "/balloon-boutique/static/css/main.820a19d2.css.map",
-    "main.f6c964f0.js.map": "/balloon-boutique/static/js/main.f6c964f0.js.map"
+    "main.14b001df.js.map": "/balloon-boutique/static/js/main.14b001df.js.map"
   },
   "entrypoints": [
     "static/css/main.820a19d2.css",
-    "static/js/main.f6c964f0.js"
+    "static/js/main.14b001df.js"
   ]
 }
