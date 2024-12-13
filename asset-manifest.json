@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/balloon-boutique/static/css/main.d8f410ad.css",
-    "main.js": "/balloon-boutique/static/js/main.45592171.js",
+    "main.css": "/balloon-boutique/static/css/main.820a19d2.css",
+    "main.js": "/balloon-boutique/static/js/main.5c26c628.js",
     "static/media/user7.jpg": "/balloon-boutique/static/media/user7.53f46b50034e635db71d.jpg",
     "static/media/3.jpg": "/balloon-boutique/static/media/3.0e6836971c391e57584f.jpg",
     "static/media/2.jpg": "/balloon-boutique/static/media/2.5dbf6c023f8f08f08de5.jpg",
@@ -23,17 +23,23 @@
     "static/media/5.jpg": "/balloon-boutique/static/media/5.06f413d95516f46a4798.jpg",
     "static/media/user2.jpg": "/balloon-boutique/static/media/user2.55c294fdeef1744c896e.jpg",
     "static/media/history-mobile.png": "/balloon-boutique/static/media/history-mobile.5396b9e14a360c22245e.png",
+    "static/media/foil-birthday.jpg": "/balloon-boutique/static/media/foil-birthday.cee2cbb90a84116321f8.jpg",
     "static/media/thematic-discharge.jpg": "/balloon-boutique/static/media/thematic-discharge.fd1accbdfbe1ba3c9d76.jpg",
     "static/media/thematic-birthday.jpg": "/balloon-boutique/static/media/thematic-birthday.238bb98cb3ec5205f6a1.jpg",
+    "static/media/words.jpg": "/balloon-boutique/static/media/words.79d12b253c2142d51cdb.jpg",
     "static/media/6.jpg": "/balloon-boutique/static/media/6.d33483852051f4c2d0ac.jpg",
     "static/media/user1.jpg": "/balloon-boutique/static/media/user1.d874b001657fb0c0b4da.jpg",
+    "static/media/kids.jpg": "/balloon-boutique/static/media/kids.aeb529f198c13954b7da.jpg",
+    "static/media/filled.jpg": "/balloon-boutique/static/media/filled.4b877b855a060237a059.jpg",
+    "static/media/numbers.jpg": "/balloon-boutique/static/media/numbers.77d1031ed289c2fd67b0.jpg",
     "static/media/balloon.png": "/balloon-boutique/static/media/balloon.b1c19518bb5afc305aba.png",
+    "static/media/with-patterns.jpg": "/balloon-boutique/static/media/with-patterns.d2e140f9cb20b2c36e64.jpg",
     "index.html": "/balloon-boutique/index.html",
-    "main.d8f410ad.css.map": "/balloon-boutique/static/css/main.d8f410ad.css.map",
-    "main.45592171.js.map": "/balloon-boutique/static/js/main.45592171.js.map"
+    "main.820a19d2.css.map": "/balloon-boutique/static/css/main.820a19d2.css.map",
+    "main.5c26c628.js.map": "/balloon-boutique/static/js/main.5c26c628.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8f410ad.css",
-    "static/js/main.45592171.js"
+    "static/css/main.820a19d2.css",
+    "static/js/main.5c26c628.js"
   ]
 }
