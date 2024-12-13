@@ -35,6 +35,10 @@ export const BalloonSectionCardWrapper = styled.div`
   @media screen and (min-width: 1200px) {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  @media screen and (min-width: 1500px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 `;
 
 export const BalloonSectionCard = styled.div`

@@ -5,8 +5,10 @@ export const BalloonSection = ({ title, ukrTitle, array }) => {
     const navigate = useNavigate();
 
     const BalloonCardClick = (s) => {
-        navigate(`thematic/${s.subsection}`);
+        navigate(`${title}/${s.subsection}`);
     }
+
+    // console.log(array);
 
     return (
         <BalloonSectionWrapper id={title}>

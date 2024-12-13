@@ -1,3 +1,4 @@
+import { Tooltip } from "react-tooltip";
 import styled from "styled-components";
 
 export const BalloonSubsectionWrapper = styled.section`
@@ -19,8 +20,9 @@ export const BackButton = styled.button`
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  font-size: 20px;
+  font-size: 18px;
   color: #5a3e3e;
+  font-weight: 500;
   background-color: transparent;
   cursor: pointer;
   display: flex;
@@ -47,13 +49,19 @@ export const BackButton = styled.button`
 `;
 
 export const BaloonSubsectionTitle = styled.h2`
-  font-size: 40px;
-  margin-bottom: 35px;
+  position: relative;
+  font-size: 37px;
   line-height: 1.2;
+  margin-bottom: 35px;
   text-align: center;
 
+  span {
+    margin: 0 20px;
+    font-weight: 200;
+  }
+
   @media screen and (min-width: 768px) {
-    font-size: 50px;
+    font-size: 45px;
   }
 `;
 
@@ -76,6 +84,7 @@ export const BalloonSubsectionCard = styled.div`
   display: flex;
   flex-direction: column;
   gap: 15px;
+  justify-content: space-around;
   padding: 40px 30px;
   background-color: #fafafa;
   -webkit-box-shadow: 2px 4px 8px -4px rgba(0, 0, 0, 0.75);
@@ -89,16 +98,21 @@ export const BalloonSubsectionCard = styled.div`
     height: 350px;
     border-radius: 12px;
   }
+
   p {
+    color: #7d7d7d;
+    font-size: 0.95rem;
+  }
+
+  h6 {
     font-weight: 700;
     color: #212121;
     font-size: 23px;
     letter-spacing: 0.05em;
-  }
 
-  &:hover,
-  &:focus {
-    transform: scale(1.08);
+    span {
+      font-size: 15px;
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -225,4 +239,68 @@ export const BalloonSectionNavigationButton = styled.button`
       right: 40px;
     }
   }
+`;
+
+export const FilterWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0 30px;
+`;
+
+export const FilterButton = styled.button`
+  padding: 10px 15px;
+  background-color: ${(props) => (props.active ? "#ac8282" : "#f0f0f0")};
+  color: ${(props) => (props.active ? "#fff" : "#333")};
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #5a3e3e;
+    color: #fff;
+  }
+`;
+
+export const BalloonTitleWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+
+  h5 {
+    font-size: 1rem;
+  }
+`;
+
+export const DetailsButton = styled.button`
+  border: none;
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: #eee;
+  }
+
+  img {
+    width: 22px;
+    height: 22px;
+  }
+`;
+
+export const StyledTooltip = styled(Tooltip)`
+  max-width: 250px;
+  word-wrap: break-word;
+  white-space: normal;
+  line-height: 1.4;
+  font-size: 14px;
+  opacity: 1;
+  z-index: 1000;
 `;
