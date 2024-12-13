@@ -46,7 +46,7 @@ export const BalloonSectionCard = styled.div`
   display: flex;
   flex-direction: column;
   gap: 15px;
-  border-radius: 15px;
+  // border-radius: 15px;
   padding: 40px 30px;
   -webkit-box-shadow: 2px 4px 8px -4px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px 4px 8px -4px rgba(0, 0, 0, 0.75);

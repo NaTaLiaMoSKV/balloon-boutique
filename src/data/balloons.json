@@ -3862,6 +3862,330 @@
           "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733953069/13_jbbxi3.jpg"
         }
     ]
+  },
+  "other": {
+    "box":[
+      {
+        "id": 901,
+        "title": "Коробка-сюрприз №1",
+        "price": 2500,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050587/1_oladoq.jpg"
+      },
+      {
+        "id": 902,
+        "title": "Коробка-сюрприз №2",
+        "price": 2500,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050594/2_g6axrr.jpg"
+      },
+      {
+        "id": 903,
+        "title": "Коробка-сюрприз №3",
+        "price": 2700,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050601/3_gxzeyj.jpg"
+      },
+      {
+        "id": 904,
+        "title": "Коробка-сюрприз №4",
+        "price": 1500,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050608/4_rpl0ek.jpg"
+      },
+      {
+        "id": 905,
+        "title": "Коробка-сюрприз №5",
+        "price": 2700,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050614/5_zy4z8b.jpg"
+      },
+      {
+        "id": 906,
+        "title": "Коробка-сюрприз №6",
+        "price": 1500,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050621/6_djr5bm.jpg"
+      },
+      {
+        "id": 907,
+        "title": "Коробка-сюрприз №7",
+        "price": 2500,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050628/7_cobd4v.jpg"
+      },
+      {
+        "id": 908,
+        "title": "Коробка-сюрприз №8",
+        "price": 2200,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050635/8_wrtm6t.jpg"
+      },
+      {
+        "id": 909,
+        "title": "Коробка-сюрприз №9",
+        "price": 2500,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050642/9_sfwacc.jpg"
+      },
+      {
+        "id": 910,
+        "title": "Коробка-сюрприз №10",
+        "price": 1500,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050649/10_wwemdo.jpg"
+      }
+    ],
+    "arch":[
+      {
+        "id": 911,
+        "title": "Арка №1",
+        "description": "Ціну уточнюйте",
+        "price": 0,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050770/1_mhu1pz.jpg"
+      },
+      {
+        "id": 912,
+        "title": "Арка №2",
+        "description": "Ціну уточнюйте",
+        "price": 0,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050777/2_be01sp.jpg"
+      },
+      {
+        "id": 913,
+        "title": "Арка №3",
+        "description": "Ціну уточнюйте",
+        "price": 0,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050784/3_orcmta.jpg"
+      },
+      {
+        "id": 914,
+        "title": "Арка №4",
+        "description": "Ціну уточнюйте",
+        "price": 0,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050791/4_qzoc2n.jpg"
+      },
+      {
+        "id": 915,
+        "title": "Арка №5",
+        "description": "Ціну уточнюйте",
+        "price": 0,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050797/5_osurpr.jpg"
+      },
+      {
+        "id": 916,
+        "title": "Арка №6",
+        "description": "Ціну уточнюйте",
+        "price": 0,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050804/6_rinmbe.jpg"
+      },
+      {
+        "id": 917,
+        "title": "Арка №7",
+        "description": "Ціну уточнюйте",
+        "price": 0,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050811/7_jujj2x.jpg"
+      },
+      {
+        "id": 918,
+        "title": "Арка №8",
+        "description": "Ціну уточнюйте",
+        "price": 0,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050818/8_ii5n1e.jpg"
+      },
+      {
+        "id": 919,
+        "title": "Арка №9",
+        "description": "Ціну уточнюйте",
+        "price": 0,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050825/9_frap6n.jpg"
+      },
+      {
+        "id": 920,
+        "title": "Арка №10",
+        "description": "Ціну уточнюйте",
+        "price": 0,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050832/10_qt9xyg.jpg"
+      },
+      {
+        "id": 921,
+        "title": "Арка №11",
+        "description": "Ціну уточнюйте",
+        "price": 0,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050839/11_av3lrl.jpg"
+      },
+      {
+        "id": 922,
+        "title": "Арка №12",
+        "description": "Ціну уточнюйте",
+        "price": 0,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050846/12_l0oto7.jpg"
+      }
+    ],
+    "set": {
+      "set-latex": [
+         {
+          "id": 923,
+          "title": "'Гендерна вечірка'",
+          "description": "Написи (10 шт), 30см",
+          "price": 820,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050885/1_sxbsfw.jpg"
+        },
+         {
+          "id": 924,
+          "title": "'Будь щаслива'",
+          "description": "Написи (10 шт), 30см",
+          "price": 820,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050892/2_zfyk8q.jpg"
+        },
+         {
+          "id": 925,
+          "title": "'Тобі немає рівних'",
+          "description": "Написи (10 шт), 30см",
+          "price": 820,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050899/3_nrnemi.jpg"
+        },
+         {
+          "id": 926,
+          "title": "'Дякую за синочка'",
+          "description": "Блакитний, браш, хром 10 шт, 30см",
+          "price": 820,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050906/4_aftfkd.jpg"
+        },
+         {
+          "id": 927,
+          "title": "'Дякую за донечку'",
+          "description": "Рожевий, серця, хром 10 шт, 30см",
+          "price": 820,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050913/5_b5nzf0.jpg"
+        },
+         {
+          "id": 928,
+          "title": "'Ти красунчик'",
+          "description": "Написи (10 шт), 30см",
+          "price": 820,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050920/6_k2hflm.jpg"
+        },
+         {
+          "id": 929,
+          "title": "'Happy Birthday' тіффані + білий",
+          "description": "10 шт",
+          "price": 820,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050927/7_logrtk.jpg"
+        },
+         {
+          "id": 930,
+          "title": "'Happy Birthday' фіолетовий браш",
+          "description": "10 шт",
+          "price": 820,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050934/8_wdbstb.jpg"
+        },
+         {
+          "id": 931,
+          "title": "'Happy Birthday' срібло  з чорним",
+          "description": "10 шт",
+          "price": 820,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050941/9_onsbto.jpg"
+        },
+         {
+          "id": 932,
+          "title": "Макарун-браш",
+          "description": "10 шт",
+          "price": 820,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050948/10_bq6tfe.jpg"
+        }
+      ],
+      "set-foil":[
+        {
+          "id": 933,
+          "title": "'First Birthday Boy' блакитний",
+          "price": 600,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734051003/11_djaxsf.jpg"
+        },
+        {
+          "id": 934,
+          "title": "'First Birthday Girl' рожевий",
+          "price": 600,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734051010/12_uphzz5.jpg"
+        },
+        {
+          "id": 935,
+          "title": "Набір фольгованих та латексних куль 'Свічки, рожеве золото'",
+          "price": 1300,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734051016/13_ewf17a.jpg"
+        },
+        {
+          "id": 936,
+          "title": "Набір фольгованих та латексних куль 'Princess рожевий'",
+          "price": 1300,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734051024/14_thvhw2.jpg"
+        },
+        {
+          "id": 937,
+          "title": "Набір фольгованих та латексних куль 'Princ блакитний'",
+          "price": 1300,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734051031/15_up1ghf.jpg"
+        },
+        {
+          "id": 938,
+          "title": "'Кішечка з короною' чорна",
+          "price": 900,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734051038/16_lsz7rn.jpg"
+        },
+        {
+          "id": 939,
+          "title": "'Кішечка з короною' рожева",
+          "price": 900,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734051056/17_hhpbbs.jpg"
+        },
+        {
+          "id": 940,
+          "title": "'Космічна ракета'",
+          "price": 900,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734051063/18_yrto1i.jpg"
+        },
+        {
+          "id": 941,
+          "title": "'Динозавр помаранчевий'",
+          "price": 900,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734051070/19_bx9cf1.jpg"
+        },
+        {
+          "id": 942,
+          "title": "Золото з чорним",
+          "price": 1500,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734051093/20_hiesqw.jpg"
+        }
+      ],
+      "photo-zone": [
+        {
+          "id": 943,
+          "title": "Рожевий 'Happy Birthday'",
+          "price": 500,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734051118/1_txbwu7.jpg"
+        },
+        {
+          "id": 944,
+          "title": "Блакитний 'Happy Birthday'",
+          "price": 500,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734051126/2_x19tt6.jpg"
+        },
+        {
+          "id": 945,
+          "title": "Молочно-рожевий",
+          "price": 700,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734051133/3_xkgeww.jpg"
+        },
+        {
+          "id": 946,
+          "title": "Блакитний з золотим хромом",
+          "price": 700,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734051140/4_n0zhz7.jpg"
+        },
+        {
+          "id": 947,
+          "title": "Бежевий, хром, рожевий",
+          "price": 500,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734051147/5_whlubc.jpg"
+        },
+        {
+          "id": 948,
+          "title": "Бежевий 'Happy Birthday'",
+          "price": 600,
+          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734051154/6_qhhd5a.jpg"
+        }
+      ]
+    }
   }
 }
 

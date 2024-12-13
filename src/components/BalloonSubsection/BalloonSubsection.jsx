@@ -121,7 +121,7 @@ export const BalloonSubsection = () => {
                 {balloon.description && <p>{balloon.description}</p>}
               </div>
               <BalloonCardInfoWrapper>
-                <h6>{balloon.price}<span>₴</span></h6>
+                <h6 className={balloon.price === 0 ? "transparent" : "" }>{balloon.price}<span>₴</span></h6>
                 <CounterWrapper>
                   <CounterButton onClick={() => decrement(balloon.id)}>-</CounterButton>
                   <CounterDisplay>{counts[balloon.id]}</CounterDisplay>

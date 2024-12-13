@@ -17,6 +17,10 @@ import kidsImg from 'images/balloons/kids.jpg'
 import foilBirthdayImg from 'images/balloons/foil-birthday.jpg'
 import wordsImg from 'images/balloons/words.jpg'
 
+import boxImg from 'images/balloons/box.jpg'
+import archImg from 'images/balloons/arch.jpg'
+import setImg from 'images/balloons/set.jpg'
+
 import * as BalloonSection from "components/BalloonSection/BalloonSection";
 import { CartButton } from "components/CartButton/CartButton"
 import { ukrTitles } from "data/ukrTitle"
@@ -43,7 +47,13 @@ export const BalloonsPage = () => {
         { name: ukrTitles['kids'], image: kidsImg, subsection: 'kids' },
         { name: ukrTitles['foil-birthday'], image: foilBirthdayImg, subsection: 'foil-birthday' },
         { name: ukrTitles['words'], image: wordsImg, subsection: 'words' },
-    ]
+    ];
+    
+    const otherArray = [
+        { name: ukrTitles['box'], image: boxImg, subsection: 'box' },
+        { name: ukrTitles['arch'], image: archImg, subsection: 'arch' },
+        { name: ukrTitles['set'], image: setImg, subsection: 'set' },
+    ];
 
     return (
         <>
@@ -51,6 +61,7 @@ export const BalloonsPage = () => {
             <BalloonSection.BalloonSection ukrTitle='Тематичні' title='thematic' array={thematicArray} />
             <BalloonSection.BalloonSection ukrTitle='Латексні' title='latex' array={latexArray} />
             <BalloonSection.BalloonSection ukrTitle='Фольговані' title='foil' array={foilArray} />
+            <BalloonSection.BalloonSection ukrTitle='Інші' title='other' array={otherArray} />
             <CartButton />
             <Outlet />
         </>

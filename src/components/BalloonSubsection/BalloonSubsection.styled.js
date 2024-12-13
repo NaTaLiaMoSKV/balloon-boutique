@@ -126,6 +126,10 @@ export const BalloonCardInfoWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  h6.transparent {
+    color: transparent;
+  }
 `;
 
 export const CounterWrapper = styled.div`
