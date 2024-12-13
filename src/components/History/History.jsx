@@ -1,11 +1,9 @@
-// import historyTabletImg from '../../images/history-tablet.png';
 import historyMobileImg from '../../images/history-mobile.png';
 import historyDesktopImg from '../../images/history-desktop.png';
 import { HistoryImg, HistoryItem, HistoryList, HistoryMobileContainer, HistorySection } from './History.styled';
 
 export const History = () => {
     const width = window.innerWidth;
-    console.log(width);
 
     return (
         <HistorySection>

@@ -13,21 +13,21 @@ export const DeliverySteps = () => {
                     <StepImage src={step1Img} alt="Step 1" />
                     <StepTitle><span>1. </span>Оформіть замовлення за хвилини</StepTitle>
                     <StepDescription>
-                        Просто оберіть товари та оформіть замовлення онлайн.
+                        Просто оберіть товари та оформіть замовлення онлайн
                     </StepDescription>
                 </StepItem>
                 <StepItem>
                     <StepImage src={step2Img} alt="Step 2" />
                     <StepTitle><span>2. </span>Миттєва обробка вашого замовлення</StepTitle>
                     <StepDescription>
-                        Менеджери швидко зв’яжуться для підтвердження деталей.
+                        Менеджери швидко зв’яжуться для підтвердження деталей
                     </StepDescription>
                 </StepItem>
                 <StepItem>
                     <StepImage src={step3Img} alt="Step 3" />
                     <StepTitle><span>3. </span>Швидка доставка до вашого дому</StepTitle>
                     <StepDescription>
-                        Отримайте своє замовлення в зручний для вас час.
+                        Отримайте своє замовлення в зручний для вас час
                     </StepDescription>
                 </StepItem>
             </StepsList>

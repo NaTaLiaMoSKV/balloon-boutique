@@ -39,8 +39,8 @@ export const MobileMenu = styled.div`
 `;
 
 export const LogoImage = styled.img`
-  width: 60px;
-  height: 60px;
+  width: 240px;
+  height: 90px;
 `;
 
 export const BasketImage = styled.img`

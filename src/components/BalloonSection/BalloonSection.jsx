@@ -8,8 +8,6 @@ export const BalloonSection = ({ title, ukrTitle, array }) => {
         navigate(`${title}/${s.subsection}`);
     }
 
-    // console.log(array);
-
     return (
         <BalloonSectionWrapper id={title}>
             <BaloonSectionTitle>{ukrTitle} кульки</BaloonSectionTitle>

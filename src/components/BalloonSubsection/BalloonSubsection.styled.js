@@ -50,7 +50,7 @@ export const BackButton = styled.button`
 
 export const BaloonSubsectionTitle = styled.h2`
   position: relative;
-  font-size: 37px;
+  font-size: 25px;
   line-height: 1.2;
   margin-bottom: 35px;
   text-align: center;
@@ -61,7 +61,7 @@ export const BaloonSubsectionTitle = styled.h2`
   }
 
   @media screen and (min-width: 768px) {
-    font-size: 45px;
+    font-size: 40px;
   }
 `;
 

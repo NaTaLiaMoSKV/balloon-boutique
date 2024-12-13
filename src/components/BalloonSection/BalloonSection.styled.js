@@ -42,12 +42,10 @@ export const BalloonSectionCardWrapper = styled.div`
 `;
 
 export const BalloonSectionCard = styled.div`
-  background-color: #fafafa;
   display: flex;
   flex-direction: column;
   gap: 15px;
-  // border-radius: 15px;
-  padding: 40px 30px;
+  padding: 40px 30px 30px;
   -webkit-box-shadow: 2px 4px 8px -4px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px 4px 8px -4px rgba(0, 0, 0, 0.75);
   box-shadow: 2px 4px 8px -4px rgba(0, 0, 0, 0.75);
@@ -59,7 +57,7 @@ export const BalloonSectionCard = styled.div`
   }
 
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: center;
   }
 

@@ -21,15 +21,12 @@ const cartReducer = (state, action) => {
             item.balloon.id === balloon.id ? { ...item, quantity } : item
           ),
         };
-        console.log(...newRes.cart);
         return newRes;
       }
       const res = {
         ...state,
         cart: [...state.cart, { balloon, quantity }],
       };
-
-      console.log(...res.cart);
       return res;
     case "REMOVE_FROM_CART":
       return {
