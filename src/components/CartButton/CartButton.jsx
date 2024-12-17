@@ -1,22 +1,18 @@
-import { useCart } from 'state/CartContext';
-import cartImg from 'images/cart.png';
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
+import { useCart } from 'state/CartContext';
+import cartImg from 'images/basket.png';
 
 const CartButtonStyled = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #5a3e3e;
+  background-color: transparent;
   color: #fff;
-  position: fixed;
   border: none;
-  bottom: 10px;
-  right: -2px;
   padding: 15px;
-  padding-right: 17px;
   font-size: 20px;
   border-radius: 10px 0 0 10px;
-  z-index: 100;
 
   img {
     margin-left: 8px;
@@ -24,31 +20,29 @@ const CartButtonStyled = styled.button`
     height: 30px;
   }
 
-  &:hover {
-    background-color: #c09e9e;
-
-    span {
-        background-color: #c09e9e;
-        border: 1px solid #ac8282;
-    }
-  }
-
   span {
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
-    background-color: #ac8282;
-    border: 1px solid #674d4d;
+    color: #212121;
+    background-color: #dedede;
+    border: 1px solid #fff;
     font-weight: 700;
     padding: 5px;
     border-radius: 50%;
-    font-size: 17px;
-    width: 20px;
-    height: 20px;
-    top: -15px;
-    left: -15px;
+    font-size: 14px;
+    width: 15px;
+    height: 15px;
+    top: 2px;
+    left: 5px;
+  }
+
+  &:hover {
+    span {
+      background-color: #888;
+      color: #fff;
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -56,23 +50,27 @@ const CartButtonStyled = styled.button`
   }
 `;
 
+const StyledLink = styled(NavLink)`
+  position: relative;
+`
+
 export const CartButton = () => {
-    const { cart } = useCart();
+  const { cart } = useCart();
 
-    const getTotalQuantity = (cart) => {
-        return cart.reduce((total, item) => total + item.quantity, 0);
-    };
+  const getTotalQuantity = (cart) => {
+      return cart.reduce((total, item) => total + item.quantity, 0);
+  };
 
-    const totalQuantity = getTotalQuantity(cart);
-    
-    return (
-        <>
-            <CartButtonStyled>
-                {totalQuantity > 0 && <span>{totalQuantity}</span>}
-                <img src={cartImg} alt="Кошик" />
-            </CartButtonStyled>
-           
-        </>
-    )
-
+  const totalQuantity = getTotalQuantity(cart);
+  
+  return (
+    <>
+      <StyledLink to="/cart">
+        <CartButtonStyled>
+          {totalQuantity > 0 && <span>{totalQuantity}</span>}
+          <img src={cartImg} alt="Кошик" />
+        </CartButtonStyled>
+      </StyledLink>
+    </>
+  )
 }

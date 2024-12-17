@@ -2,6 +2,7 @@ import { Tooltip } from "react-tooltip";
 import styled from "styled-components";
 
 export const BalloonSubsectionWrapper = styled.section`
+  margin-top: 130px;
   position: relative;
   padding: 0px 0 60px;
   color: #5a4d45;
@@ -140,7 +141,11 @@ export const CounterWrapper = styled.div`
   border: 1px solid #ccc;
   border-radius: 50px;
   overflow: hidden;
-  max-width: 150px;
+  max-width: 100px;
+
+  @media screen and(max-width: 767px) {
+    height: 40px;
+  }
 `;
 
 export const CounterButton = styled.button`
@@ -154,11 +159,16 @@ export const CounterButton = styled.button`
 `;
 
 export const CounterDisplay = styled.div`
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 10px;
+  font-size: 14px;
   font-weight: bold;
   background-color: #fff;
   text-align: center;
+
+  @media screen and(min-width: 768px) {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
 `;
 
 export const AddToCartButton = styled.button`
@@ -183,7 +193,11 @@ export const AddToCartButton = styled.button`
     color: #ac8282;
   }
 
-  &:hover {
+  &:disabled {
+    cursor: auto;
+  }
+
+  &:not(:disabled):hover {
     background-color: #4a2e2e;
   }
 
@@ -306,5 +320,5 @@ export const StyledTooltip = styled(Tooltip)`
   line-height: 1.4;
   font-size: 14px;
   opacity: 1;
-  z-index: 1000;
+  z-index: 100;
 `;

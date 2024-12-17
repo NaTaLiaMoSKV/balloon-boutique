@@ -8,7 +8,7 @@
 .header-nav {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
 }
 
 .header-nav__list {
@@ -24,7 +24,7 @@
     text-decoration: none;
 }
 
-.basket-link {
+.cart-link {
     padding: 20px;
     border: #212121;
 }
@@ -79,7 +79,7 @@
         font-size: 30px;
     }
 
-    .basket-link {
+    .cart-link {
         position: absolute;
         top: 30px;
         left: 30px;

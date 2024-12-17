@@ -1,17 +1,43 @@
 import { NavLink } from "react-router-dom";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-export const Header = styled.header`
-  background-color: #dedede;
+export const HeaderWrapper = styled.header`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  ${(props) =>
+    props.isHidden &&
+    css`
+      transform: translateY(-100%);
+    `}
+
+  ${(props) =>
+    props.hasShadow &&
+    css`
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    `}
+
+  @media (min-width: 768px) {
+    transform: translateY(0) !important;
+  }
 `;
 
 export const StyledNavLink = styled(NavLink)`
   text-decoration: none;
   color: #212121;
+  backgeround-color: #000;
   font-size: 18px;
   padding: 5px;
 
   &:hover {
+    color: #5a3e3e;
+    text-decoration: underline;
+    text-underline-offset: 4px;
     color: #5a3e3e;
   }
 
@@ -39,14 +65,22 @@ export const MobileMenu = styled.div`
 `;
 
 export const LogoImage = styled.img`
-  width: 240px;
+  width: 180px;
   height: 90px;
+  cursor: pointer;
+
+  @media screen and (min-width: 350px) {
+    width: 240px;
+  }
 `;
 
-export const BasketImage = styled.img`
-  width: 20px;
-  height: 20px;
-  background-color: #5a3e3e66;
+export const CartImage = styled.img`
+  width: 25px;
+  height: 25px;
   padding: 12px;
   border-radius: 50%;
+
+  &:hover {
+    background-color: #dedede;
+  }
 `;

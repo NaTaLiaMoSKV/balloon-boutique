@@ -106,7 +106,7 @@ export const Link = styled(NavLink)`
     content: "";
     bottom: 0;
     right: 0;
-    width: calc(100% - 40px);
+    width: calc(100% - 30px);
     height: 1px;
     background-color: #fafafa;
     transition: transform 0.3s ease, filter 0.3s ease;
@@ -114,6 +114,7 @@ export const Link = styled(NavLink)`
 
   &:hover,
   &:focus {
+    text-decoration: none;
     color: #fff;
     text-shadow: 0px 1px 3px #fff;
 
@@ -134,5 +135,8 @@ export const Link = styled(NavLink)`
       height: 25px;
       margin-right: 15px;
     }
-  }
+
+    &::after {
+      width: calc(100% - 40px);
+    }
 `;

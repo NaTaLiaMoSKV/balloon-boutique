@@ -1,5 +1,5 @@
 import { Header } from "components/Header/Header"
-import { Outlet } from "react-router-dom"
+import { Outlet, useLocation } from "react-router-dom"
 
 import thematicBirthdayImg from 'images/balloons/thematic-birthday.jpg'
 import thematicNewYearImg from 'images/balloons/thematic-new-year.jpg'
@@ -21,12 +21,29 @@ import boxImg from 'images/balloons/box.jpg'
 import archImg from 'images/balloons/arch.jpg'
 import setImg from 'images/balloons/set.jpg'
 
-import * as BalloonSection from "components/BalloonSection/BalloonSection";
-import { CartButton } from "components/CartButton/CartButton"
 import { ukrTitles } from "data/ukrTitle"
+import { BalloonSection } from "components/BalloonSection/BalloonSection"
+import { useEffect } from "react"
 
-// ukrTitles[title]
 export const BalloonsPage = () => {
+    const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      setTimeout(() => {
+        const element = document.querySelector(hash);
+        if (element) {
+          const offset = 100;
+          const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+          window.scrollTo({
+            top: elementPosition - offset,
+            behavior: "smooth",
+          });
+        }
+      }, 0);
+    }
+  }, [hash]);
+    
     const thematicArray = [
         { name: ukrTitles['birthday'], image: thematicBirthdayImg, subsection: 'birthday' },
         { name: ukrTitles['discharge'], image: thematicDischargeImg, subsection: 'discharge' },
@@ -58,11 +75,12 @@ export const BalloonsPage = () => {
     return (
         <>
             <Header />
-            <BalloonSection.BalloonSection ukrTitle='Тематичні' title='thematic' array={thematicArray} />
-            <BalloonSection.BalloonSection ukrTitle='Латексні' title='latex' array={latexArray} />
-            <BalloonSection.BalloonSection ukrTitle='Фольговані' title='foil' array={foilArray} />
-            <BalloonSection.BalloonSection ukrTitle='Інші' title='other' array={otherArray} />
-            <CartButton />
+            <div style={{marginTop: '130px'}}>
+                <BalloonSection ukrTitle='Тематичні' title='thematic' array={thematicArray} />
+                <BalloonSection ukrTitle='Латексні' title='latex' array={latexArray} />
+                <BalloonSection ukrTitle='Фольговані' title='foil' array={foilArray} />
+                <BalloonSection ukrTitle='Інші' title='other' array={otherArray} />
+            </div>
             <Outlet />
         </>
     )

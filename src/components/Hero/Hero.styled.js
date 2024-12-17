@@ -4,6 +4,7 @@ import backgroundImageMobile from "../../images/hero-mobile.jpg";
 import { NavLink } from "react-router-dom";
 
 export const HeroSection = styled.section`
+  margin-top: 130px;
   position: relative;
   font-size: 2.5rem;
   color: #212121;
@@ -44,6 +45,7 @@ export const HeroTitle = styled.h1`
   letter-spacing: 0.05em;
   text-align: right;
   margin-right: 30px;
+  line-height: 1.2;
 
   color: #664242;
 
@@ -63,23 +65,6 @@ export const HeroSlogan = styled.p`
 
   @media (max-width: 768px) {
     font-size: 1rem;
-  }
-`;
-
-export const Button = styled.button`
-  background-color: #ff4d4d;
-  color: #fff;
-  border: none;
-  padding: 15px 30px;
-  font-size: 1rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-
-  &:hover {
-    background-color: #e63939;
   }
 `;
 
@@ -112,6 +97,8 @@ export const Link = styled(NavLink)`
     inset 3px 3px 3px 0px rgba(0, 0, 0, 0.2);
 
   &:hover {
+    text-decoration: none;
+    color: #212121;
     box-shadow: -5px -5px 5px 0px rgba(255, 255, 255, 0.8),
       5px 5px 5px 0px rgba(0, 0, 0, 0.2),
       inset -5px -5px 5px 0px rgba(255, 255, 255, 0.8),

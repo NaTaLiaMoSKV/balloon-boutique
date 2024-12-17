@@ -12,6 +12,7 @@ body {
     letter-spacing: 0.03em;
     font-style: normal;
     background-color: #FFF;
+    overflow: scroll;
 }
 
 .no-scroll {

@@ -24,8 +24,8 @@ export const LogoWrapper = styled.div`
   h2 {
     font-size: 40px;
     font-weight: 700;
-    font-size: 70px;
     letter-spacing: 0.05em;
+    line-height: 1.2;
   }
 
   @media screen and (min-width: 1200px) {
@@ -44,6 +44,7 @@ export const ContactsWrapper = styled.div`
   font-size: 18px;
 
   a {
+    text-decoration: none;
     position: relative;
     font-size: smaller;
     font-style: italic;
@@ -75,7 +76,7 @@ export const ContactsWrapper = styled.div`
   @media screen and (min-width: 768px) {
     font-size: 22px;
     min-width: 200px;
-    gap: 20px;
+    gap: 10px;
   }
 `;
 
