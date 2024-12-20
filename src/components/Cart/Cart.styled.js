@@ -1,9 +1,6 @@
+import { DetailsButton } from "components/BalloonSubsection/BalloonSubsection.styled";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-
-export const CartSection = styled.section`
-  margin-top: 130px;
-`;
 
 export const EmptyCartContainer = styled.div`
   padding-top: 50px;
@@ -20,21 +17,27 @@ export const EmptyCartContainer = styled.div`
 
 export const MobileCartItemWrapper = styled.div`
   display: flex;
+  flex-direction: column;
   position: relative;
-  align-items: top;
   gap: 15px;
   padding: 30px 15px;
-  border-bottom: 1px solid #dedede;
-  border-top: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
 
   .details-wrapper {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+  }
+
+  p.add-info {
+    color: #777;
+    margin-top: 2px;
   }
 `;
 
 export const CartTitle = styled.h1`
+  margin-top: 110px;
   font-size: 35px;
   text-align: center;
   color: #5a4d45;
@@ -42,98 +45,148 @@ export const CartTitle = styled.h1`
   margin-bottom: 25px;
 
   @media screen and (min-width: 768px) {
+    margin-top: 130px;
     font-size: 45px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
+`;
+
+export const CartSection = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 30px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    gap: 40px;
+    border: 1px solid #dedede;
+    border-radius: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    gap: 50px;
+    max-height: 63vh;
+    overflow: scroll;
   }
 `;
 
 export const TableContainer = styled.div`
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
   display: none;
 
   @media screen and (min-width: 768px) {
-    display: table;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 `;
 
 export const TableRow = styled.div`
-  display: table-row;
-  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  border-bottom: 1px solid #dedede;
+  padding-bottom: 30px;
 
   &:last-child {
     border-bottom: none;
+    padding-bottom: 0;
   }
 `;
 
 export const TableColumn = styled.div`
-  display: table-cell;
-  padding: 10px 5px;
-  vertical-align: middle;
-  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0 10px;
+  text-align: left;
 
-  @media screen and (min-width: 1200px) {
-    padding: 30px 10px;
+  &.photo-column {
+    flex: 0 0 30%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &.info-column {
+    flex: 1;
+    gap: 10px;
+  }
+
+  &.action-column {
+    flex: 0 0 10%;
+    align-items: flex-end;
   }
 `;
 
 export const ProductImage = styled.img`
-  width: 35%;
-  object-fit: cover;
-  border-radius: 5px;
+  border-radius: 20px;
 
   @media screen and (min-width: 768px) {
-    width: 100px;
-    height: 100px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 240px;
-    height: 240px;
+    max-height: 200px;
+    object-fit: cover;
   }
 `;
 
 export const ProductTitle = styled.p`
-  font-size: 14px;
-  margin: 0;
+  font-size: 16px;
   font-weight: 500;
   color: #333;
-  text-align: left;
+  margin: 0;
 
   @media screen and (min-width: 768px) {
-    font-size: 16px;
+    font-size: 19px;
   }
 `;
 
-export const ProductQuantity = styled.p`
-  font-size: 14px;
-  margin: 0;
-  color: #666;
+export const ProductNote = styled.input`
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #dedede;
 `;
 
 export const ProductPrice = styled.p`
-  font-size: 14px;
-  margin: 0;
-  color: #000;
+  font-size: 18px;
   font-weight: bold;
-  white-space: nowrap;
+  color: #555;
+  margin: 0;
+
+  span {
+    font-size: 12px;
+    color: #555;
+  }
 
   @media screen and (min-width: 768px) {
-    font-size: 16px;
-    white-space: nowrap;
+    font-size: 20px;
+  }
+`;
+
+export const DeleteButton = styled(DetailsButton)`
+  img {
+    width: 20px;
+    height: 20px;
   }
 `;
 
 export const TotalContainer = styled.div`
-  border-top: 1px solid black;
-  padding: 30px 10px 50px;
   display: flex;
   flex-direction: column;
+  gap: 20px;
 
   .note {
     text-align: center;
-    font-size: 13px;
-    color: gray;
+  }
+
+  @media screen and (min-width: 1200px) {
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    background-color: #fff;
   }
 `;
 
@@ -141,7 +194,6 @@ export const TotalWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   font-size: 18px;
-  margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {
     font-size: 22px;

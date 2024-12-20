@@ -1,4 +1,4 @@
-import { useNavigate, useParams } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState, useMemo } from "react";
 import { BackButton, BalloonSubsectionCard, BalloonSubsectionCardWrapper, BalloonSubsectionWrapper, BaloonSubsectionTitle, CounterWrapper, CounterButton, CounterDisplay, AddToCartButton, BalloonCardInfoWrapper, FilterButton, FilterWrapper, DetailsButton, BalloonTitleWrapper, StyledTooltip } from "./BalloonSubsection.styled";
 import { Header } from "components/Header/Header";
@@ -14,6 +14,8 @@ import { formatNumber } from "utils/formatNumber";
 export const BalloonSubsection = () => {
   const { section, title } = useParams();
   const { cart, dispatch } = useCart();
+  const { pathname } = useLocation();
+  // console.log(pathname)
   const navigate = useNavigate();
 
   const dataArray = data[section]?.[title];
@@ -71,7 +73,7 @@ export const BalloonSubsection = () => {
   const handleAddToCart = (balloon) => {
     dispatch({
       type: "ADD_TO_CART",
-      payload: { balloon, quantity: counts[balloon.id] },
+      payload: { balloon, quantity: counts[balloon.id], pathname },
     });
   };
 
@@ -103,7 +105,7 @@ export const BalloonSubsection = () => {
 
         <BalloonSubsectionCardWrapper>
           {filteredBalloons.map((balloon) => (
-            <BalloonSubsectionCard key={balloon.id}>
+            <BalloonSubsectionCard key={balloon.id} id={balloon.id}>
               <img src={balloon.image} alt={balloon.title} />
               <div>
                 <BalloonTitleWrapper>

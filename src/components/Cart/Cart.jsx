@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Header } from "components/Header/Header";
-import { CartSection, CartTitle, EmptyCartContainer, MobileCartItemWrapper, ProductImage, ProductPrice, ProductTitle, StyledCartLink, TableColumn, TableContainer, TableRow, TotalContainer, TotalWrapper } from "./Cart.styled";
-import { BackButton, CounterButton, CounterDisplay, CounterWrapper, DetailsButton, StyledTooltip } from "components/BalloonSubsection/BalloonSubsection.styled";
+import { CartSection, CartTitle, DeleteButton, EmptyCartContainer, MobileCartItemWrapper, ProductImage, ProductNote, ProductPrice, ProductTitle, StyledCartLink, TableColumn, TableContainer, TableRow, TotalContainer, TotalWrapper } from "./Cart.styled";
+import { BackButton, CounterButton, CounterDisplay, CounterWrapper } from "components/BalloonSubsection/BalloonSubsection.styled";
 import { CloseButton, ModalButtonsWrapper, ModalContent, ModalInput, ModalOverlay, OpenModalButton } from "./Modal.styled";
 import { useCart } from "state/CartContext";
 import { calculateTotalPrice } from "utils/calculateTotalPrice";
@@ -13,6 +13,7 @@ import editImg from 'images/edit.png'
 import deleteImg from 'images/delete.png'
 import closeImg from 'images/close.png'
 import { useNavigate } from "react-router-dom";
+import { formOrder } from "utils/formOrder";
 
 export const Cart = () => {
     const { cart, dispatch } = useCart();
@@ -107,7 +108,8 @@ export const Cart = () => {
     return (
         <>
             <Header />
-            <CartSection>
+            <CartTitle>Кошик</CartTitle>
+            <section>
                 {cart.length === 0 && (
                     <EmptyCartContainer>
                         <h2> Ваш кошик поки що порожній</h2>
@@ -118,98 +120,133 @@ export const Cart = () => {
                 )}
                 {cart.length > 0 && (
                     <>
-                        <CartTitle>Кошик</CartTitle>
                         {width < 768 && cart.map((item) => ( 
                             <MobileCartItemWrapper key={item.balloon.id}>
                                 <ProductImage src={item.balloon.image} alt={item.balloon.title} />
                                 <div className="details-wrapper">
-                                    <ProductTitle>
-                                        {item.balloon.title}
-                                        {item.inscription && <span> ({truncateText(10, item.inscription)})</span>}
+                                    <div>
+                                         <ProductTitle>
+                                            {item.balloon.title}
+                                            {item.inscription && <span> ({truncateText(10, item.inscription)})</span>}
                                         </ProductTitle>
-                                        {item.balloon.longDescription === "Додати індивідуальний напис - 100 грн" && (     
-                                            <>
-                                                <DetailsButton 
-                                                    data-tooltip-id="details-tooltip" 
-                                                    data-tooltip-content={item.inscription ? 'Змінити напис' : "Додати напис"}
-                                                    onClick={() => openInscriptionModal(item.balloon.id, item.inscription)}
-                                                >
-                                                    <img src={item.inscription ? editImg : addImg} alt="редагувати напис" />
-                                                </DetailsButton>
-                                                <StyledTooltip id="details-tooltip" place="top" effect="solid" />
-                                            </>
-                                        )}
-                                    <CounterWrapper>
+                                        {item.balloon.description && <p className="add-info"> {item.balloon.description}</p>}
+                                   </div>
+                                       
+                                    <DeleteButton onClick={() => handleRemoveFromCart(item.balloon)}>
+                                        <img src={deleteImg} alt="delete" />
+                                    </DeleteButton>
+                                   
+                                </div>
+                                {item.balloon.longDescription === "Додати індивідуальний напис - 100 грн" && (
+                                    <OpenModalButton 
+                                        onClick={() => openInscriptionModal(item.balloon.id, item.inscription)}
+                                    >
+                                        <img src={item.inscription ? editImg : addImg} alt="редагувати напис" />
+                                        <span>{item.inscription ? "Змінити надпис" : "Додати надпис"}</span>
+                                    </OpenModalButton>
+                                )}
+                                {item.pathname.match(/other|thematic/) && (
+                                    <ProductNote
+                                        type="text"
+                                        placeholder="Додаткові побажання"
+                                        value={item.note || ""}
+                                        onChange={(e) =>
+                                            dispatch({
+                                            type: "UPDATE_CART_NOTE",
+                                            payload: { id: item.balloon.id, note: e.target.value },
+                                            })
+                                        }
+                                        />
+                                )}
+                                <div className="details-wrapper">
+                                    <ProductPrice>
+                                        {formatNumber(item.balloon.price * item.quantity)} ₴ 
+                                        {item.inscription && <span> <br />+{formatNumber(item.quantity * 100)} ₴</span>}
+                                        
+                                    </ProductPrice>
+                                     <CounterWrapper>
                                         <CounterButton onClick={() => decrement(item.balloon.id)}>-</CounterButton>
                                             <CounterDisplay>{counts[item.balloon.id]}</CounterDisplay>
                                         <CounterButton onClick={() => increment(item.balloon.id)}>+</CounterButton>
                                     </CounterWrapper>
                                 </div>
-                                <div className="details-wrapper">
-                                    <ProductPrice>
-                                        {formatNumber(item.balloon.price * item.quantity)} ₴ 
-                                        {item.inscription && <span> <br />+{formatNumber(item.quantity * 100)} ₴</span>}
-                                    </ProductPrice>
-                                    <DetailsButton onClick={() => handleRemoveFromCart(item.balloon)}>
-                                        <img src={deleteImg} alt="delete" />
-                                    </DetailsButton>
-                                </div>
-                                
+                                {item.balloon.price === 0 && <p className="add-info">Менеджер повідомить вам про ціну</p>}
                             </MobileCartItemWrapper>                            
                         ))
                         }
-                        <TableContainer>
-                            {cart.map((item) => (
-                                <TableRow key={item.balloon.id}>
-                                    <TableColumn>
+                        
+                        <CartSection>
+                            <TableContainer>
+                                {cart.map((item) => (
+                                    <TableRow key={item.balloon.id}>
+                                    <TableColumn className="photo-column">
                                         <ProductImage src={item.balloon.image} alt={item.balloon.title} />
                                     </TableColumn>
-                                    <TableColumn>
+                                    <TableColumn className="info-column">
+                                        <div className="title-wrapper">
                                         <ProductTitle>
                                             {item.balloon.title}
                                             {item.inscription && <span> ({truncateText(22, item.inscription)})</span>}
-                                        </ProductTitle>
-                                        {item.balloon.longDescription === "Додати індивідуальний напис - 100 грн" && (
-                                            <OpenModalButton 
-                                                onClick={() => openInscriptionModal(item.balloon.id, item.inscription)}
-                                            >
-                                                <img src={item.inscription ? editImg : addImg} alt="редагувати напис" />
-                                                <span>{item.inscription ? "Змінити надпис" : "Додати надпис"}</span>
-                                            </OpenModalButton>
-                                        )}
+                                                </ProductTitle>
+                                                {item.balloon.description && <p>{item.balloon.description}</p>}
+                                            </div>
+                                            {item.balloon.longDescription === "Додати індивідуальний напис - 100 грн" && (
+                                                <OpenModalButton 
+                                                    onClick={() => openInscriptionModal(item.balloon.id, item.inscription)}
+                                                >
+                                                    <img src={item.inscription ? editImg : addImg} alt="редагувати напис" />
+                                                    <span>{item.inscription ? "Змінити надпис" : "Додати надпис"}</span>
+                                                </OpenModalButton>
+                                            )}
+                                            {item.pathname.match(/other|thematic/) && (
+                                                <ProductNote
+                                                    type="text"
+                                                    placeholder="Додаткові побажання"
+                                                    value={item.note || ""}
+                                                    onChange={(e) =>
+                                                        dispatch({
+                                                        type: "UPDATE_CART_NOTE",
+                                                        payload: { id: item.balloon.id, note: e.target.value },
+                                                        })
+                                                    }
+                                                    />
+                                            )}
 
+                                        <div className="price-wrapper">
+                                        <ProductPrice>
+                                            {formatNumber(item.balloon.price * item.quantity)} ₴
+                                            {item.inscription && <span> <br />+{formatNumber(item.quantity * 100)} ₴</span>}
+                                        </ProductPrice>
+                                        </div>
                                     </TableColumn>
-                                    <TableColumn>
+                                    <TableColumn className="action-column">
+                                        <div className="delete-wrapper">
+                                        <DeleteButton onClick={() => handleRemoveFromCart(item.balloon)}>
+                                            <img src={deleteImg} alt="Удалить" />
+                                        </DeleteButton>
+                                        </div>
+                                        <div className="counter-wrapper">
                                         <CounterWrapper>
                                             <CounterButton onClick={() => decrement(item.balloon.id)}>-</CounterButton>
-                                            <CounterDisplay>{counts[item.balloon.id]}</CounterDisplay>
+                                                <CounterDisplay>{counts[item.balloon.id]}</CounterDisplay>
                                             <CounterButton onClick={() => increment(item.balloon.id)}>+</CounterButton>
                                         </CounterWrapper>
+                                        </div>
                                     </TableColumn>
-                                    <TableColumn>
-                                        <ProductPrice>
-                                        {formatNumber(item.balloon.price * item.quantity)} ₴ 
-                                        {item.inscription && <span> <br />+{formatNumber(item.quantity * 100)} ₴</span>}
-                                    </ProductPrice>
-                                    </TableColumn>
-                                    <TableColumn>
-                                        <DetailsButton onClick={() => handleRemoveFromCart(item.balloon)}>
-                                            <img src={deleteImg} alt="delete" />
-                                        </DetailsButton>
-                                    </TableColumn>
-                                </TableRow>
-                            ))}
-                        </TableContainer>
-                        <TotalContainer>
-                            <TotalWrapper>
-                                <p>Всього: </p>
-                                <p>{formatNumber(totalPrice)} ₴ </p>
-                            </TotalWrapper>
-                            <StyledCartLink to="/order">
-                                Оформити замовлення
-                            </StyledCartLink>
-                            <p className="note">Вартість доставки розраховується при оформленні замовлення</p>
-                        </TotalContainer>
+                                    </TableRow>
+                                ))}
+                            </TableContainer>
+                            <TotalContainer>
+                                <TotalWrapper>
+                                    <p>Всього: </p>
+                                    <p>{formatNumber(totalPrice)} ₴ </p>
+                                </TotalWrapper>
+                                <StyledCartLink to="/order" onClick={() => formOrder(cart)}>
+                                    Оформити замовлення
+                                </StyledCartLink>
+                                <p className="note">Вартість доставки розраховується при оформленні замовлення</p>
+                            </TotalContainer>
+                        </CartSection>   
                     </>
                 )}
                 {modalOpen && (
@@ -236,7 +273,8 @@ export const Cart = () => {
                         </ModalContent>
                     </ModalOverlay>
                 )}
-            </CartSection>  
+            {/* </CartSection>  </> */}
+           </section>
         </>
     );
 };

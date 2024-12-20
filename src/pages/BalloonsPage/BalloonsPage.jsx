@@ -26,7 +26,7 @@ import { BalloonSection } from "components/BalloonSection/BalloonSection"
 import { useEffect } from "react"
 
 export const BalloonsPage = () => {
-    const { hash } = useLocation();
+  const { hash } = useLocation();
 
   useEffect(() => {
     if (hash) {

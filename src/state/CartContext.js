@@ -19,7 +19,7 @@ const initialState = {
 const cartReducer = (state, action) => {
   switch (action.type) {
     case "ADD_TO_CART": {
-      const { balloon, quantity } = action.payload;
+      const { balloon, quantity, pathname } = action.payload;
       const existingProduct = state.cart.find(
         (item) => item.balloon.id === balloon.id
       );
@@ -28,7 +28,7 @@ const cartReducer = (state, action) => {
         ? state.cart.map((item) =>
             item.balloon.id === balloon.id ? { ...item, quantity } : item
           )
-        : [...state.cart, { balloon, quantity }];
+        : [...state.cart, { balloon, quantity, pathname }];
 
       return { ...state, cart: updatedCart };
     }
@@ -66,7 +66,21 @@ const cartReducer = (state, action) => {
             : item
         ),
       };
+    case "UPDATE_CART_NOTE": {
+      const { id, note } = action.payload;
+      const updatedCart = state.cart.map((item) =>
+        item.balloon.id === id ? { ...item, note } : item
+      );
+      return { ...state, cart: updatedCart };
+    }
 
+    case "REMOVE_NOTE":
+      return {
+        ...state,
+        cart: state.cart.map((item) =>
+          item.balloon.id === action.payload.id ? { ...item, note: "" } : item
+        ),
+      };
     default:
       return state;
   }

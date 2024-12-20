@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "components/Hero/Hero.styled";
 
 export const DonationContainer = styled.div`
   background: linear-gradient(
@@ -44,5 +45,17 @@ export const DonationText = styled.p`
     & span {
       font-size: 37px;
     }
+  }
+`;
+
+export const DonationLink = styled(Link)`
+  color: #fafafa;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 0px 1px 1px #fff;
   }
 `;

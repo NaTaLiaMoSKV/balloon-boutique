@@ -52,7 +52,6 @@ export const BalloonSectionCard = styled.div`
   transition: all 0.3s ease;
 
   img {
-    height: 350px;
     border-radius: 8px;
   }
 

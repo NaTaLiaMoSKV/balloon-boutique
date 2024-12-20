@@ -7,7 +7,7 @@ export const Hero = () => {
       <ContentWrapper>
         <HeroTitle>The Balloon Boutique</HeroTitle>
         <HeroSlogan>Радість у кожній кульці, щастя в кожній доставці!</HeroSlogan>
-        <Link style={{width: '50%'}} to="/balloons">
+        <Link className="hero" to="/balloons">
           Замовити
         </Link>
       </ContentWrapper>

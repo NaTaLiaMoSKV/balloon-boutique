@@ -65,12 +65,18 @@ export const MobileMenu = styled.div`
 `;
 
 export const LogoImage = styled.img`
-  width: 180px;
-  height: 90px;
+  max-width: 180px;
+  max-height: 90px;
   cursor: pointer;
 
-  @media screen and (min-width: 350px) {
+  @media screen and (min-width: 400px) {
     width: 240px;
+    height: 70px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 240px;
+    height: 90px;
   }
 `;
 

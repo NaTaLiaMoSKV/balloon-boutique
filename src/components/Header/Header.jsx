@@ -79,9 +79,13 @@ export const Header = () => {
           <Link to="/">
             <LogoImage src={logo} alt="logo" />
           </Link>
-          <button className="mobile-menu__button" onClick={toggleMenu}>
+          <div className="mobile-menu__wrapper">
+            <CartButton onClick={closeMenu} />
+            <button className="mobile-menu__button" onClick={toggleMenu}>
             <img src={burger} alt="open menu" />
           </button>
+          </div>
+          
 
           <MobileMenu isOpen={isMenuOpen}>
             <button className="mobile-menu__close" onClick={closeMenu}>
@@ -100,9 +104,7 @@ export const Header = () => {
                   </StyledNavLink>
                 </li>
               </ul>
-              <StyledNavLink to="/cart" onClick={closeMenu}>
-                <CartImage src={cart} alt="cart" />
-              </StyledNavLink>
+              <CartButton onClick={closeMenu} />
             </nav>
           </MobileMenu>
         </div>

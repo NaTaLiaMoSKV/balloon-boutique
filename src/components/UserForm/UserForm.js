@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Formik, Form, Field, ErrorMessage, useFormikContext } from "formik";
 import * as Yup from "yup";
 
 import {
@@ -18,11 +18,12 @@ import {
 } from "./UserForm.styled";
 import { Header } from "components/Header/Header";
 import { BackButton } from "components/BalloonSubsection/BalloonSubsection.styled";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { DatePicker, TimePicker } from "rsuite";
 import "rsuite/dist/rsuite.min.css";
 import { calculateTotalPrice } from "utils/calculateTotalPrice";
 import { useCart } from "state/CartContext";
+import { Payment } from "components/Payment/Payment";
 
 const districts = [
   { name: "Аркадія", fee: 200 },
@@ -40,14 +41,53 @@ const districts = [
   { name: "Селище Котовського", fee: 300 },
 ];
 
+const SaveToLocalStorage = ({ isInitialLoaded }) => {
+  const { values } = useFormikContext();
+
+  useEffect(() => {
+    if (isInitialLoaded) {
+      localStorage.setItem("userForm", JSON.stringify(values));
+    }
+  }, [values, isInitialLoaded]);
+
+  return null;
+};
+
 export const UserForm = () => {
   const { cart } = useCart();
+  const [sumbitted, setSubmitted] = useState(false);
   const [additionalFee, setAdditionalFee] = useState(0);
+  const [initialValues, setInitialValues] = useState(null);
+  const [isInitialLoaded, setIsInitialLoaded] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
     const now = new Date();
     now.setHours(now.getHours(), now.getMinutes() + 120, 0, 0);
+  }, []);
+
+  useEffect(() => {
+    const savedData = localStorage.getItem("userForm");
+    if (savedData) {
+      setInitialValues(JSON.parse(savedData));
+    } else {
+      setInitialValues({
+        name: "",
+        email: "",
+        phone: "",
+        isOtherRecipient: false,
+        recipientName: "",
+        recipientPhone: "",
+        district: "",
+        street: "",
+        houseNumber: "",
+        deliveryLocation: "",
+        deliveryDate: null,
+        deliveryTime: null,
+        isDelayedDelivery: false,
+      });
+    }
+    setIsInitialLoaded(true);
   }, []);
 
   useEffect(() => {
@@ -82,9 +122,11 @@ export const UserForm = () => {
   const validationSchema = Yup.object({
     name: Yup.string().required("Ім'я є обов'язковим"),
     email: Yup.string().email("Невірний формат email"),
-    // .required("Пошта є обов'язковою"),
     phone: Yup.string()
-      .matches(/^[0-9]+$/, "Має містити тільки цифри")
+      .matches(
+        /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/,
+        "Невірний формат"
+      )
       .required("Номер телефону є обов'язковим"),
     isOtherRecipient: Yup.boolean(),
     recipientName: Yup.string().when("isOtherRecipient", {
@@ -92,24 +134,17 @@ export const UserForm = () => {
       then: () => Yup.string().required("Ім'я отримувача є обов'язковим"),
       otherwise: () => Yup.string(),
     }),
-    // recipientPhone: Yup.string().when("isOtherRecipient", {
-    //   is: true,
-    //   then: () =>
-    //     Yup.string()
-    //       .matches(/^[0-9]+$/, "Має містити тільки цифри")
-    //       .required("Номер телефону отримувача є обов'язковим")
-    //       .min(8, "Номер телефону має містити мінімум 8 символів"),
-    //   otherwise: () => Yup.string(),
-    // }),
     recipientPhone: Yup.string().when("isOtherRecipient", {
       is: true,
       then: () =>
         Yup.string()
-          .matches(/^\d{3} \d{3} \d{2} \d{2}$/, "Формат: XXX XXX XX XX")
+          .matches(
+            /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/,
+            "Невірний формат"
+          )
           .required("Номер телефону отримувача є обов'язковим"),
       otherwise: () => Yup.string(),
     }),
-
     district: Yup.string().required("Оберіть район"),
     street: Yup.string().required("Вкажіть вулицю"),
     houseNumber: Yup.string().required("Вкажіть номер будинку"),
@@ -134,6 +169,8 @@ export const UserForm = () => {
     setFieldValue("district", e.target.value);
   };
 
+  if (!initialValues) return <div>Loading...</div>;
+
   return (
     <>
       <Header />
@@ -143,24 +180,14 @@ export const UserForm = () => {
         </BackButton>
         <FormContainer>
           <Formik
-            initialValues={{
-              name: "",
-              email: "",
-              phone: "",
-              isOtherRecipient: false,
-              recipientName: "",
-              recipientPhone: "",
-              district: "",
-              street: "",
-              houseNumber: "",
-              deliveryLocation: "",
-              deliveryDate: null,
-              deliveryTime: null,
-              isDelayedDelivery: false,
-            }}
+            enableReinitialize
+            initialValues={initialValues}
             validationSchema={validationSchema}
+            // onSubmit={handleSubmit}
+            ationSchema={validationSchema}
             onSubmit={(values) => {
-              console.log("Збережені дані:", { ...values, additionalFee });
+              // console.log("Збережені дані:", { ...values, additionalFee });
+              setSubmitted(true);
             }}
           >
             {({ values, setFieldValue }) => (
@@ -400,14 +427,19 @@ export const UserForm = () => {
 
                 <PayContainer>
                   <p>
-                    До сплати: {calculateTotalPrice(cart) + additionalFee} ₴
+                    До сплати:{" "}
+                    <span style={{ whiteSpace: "nowrap" }}>
+                      {calculateTotalPrice(cart) + additionalFee} ₴
+                    </span>
                   </p>
-                  <Button type="submit">Перейти до оплати</Button>
+                  <Button type="submit"> Перейти до оплати</Button>
                 </PayContainer>
+                <SaveToLocalStorage isInitialLoaded={isInitialLoaded} />
               </Form>
             )}
           </Formik>
         </FormContainer>
+        {sumbitted && <Payment />}
       </section>
     </>
   );
