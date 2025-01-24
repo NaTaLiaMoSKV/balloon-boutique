@@ -4,6 +4,7 @@ import backgroundImageMobile from "../../images/hero-mobile.jpg";
 import { NavLink } from "react-router-dom";
 
 export const HeroSection = styled.section`
+  margin-top: 130px;
   position: relative;
   font-size: 2.5rem;
   color: #212121;
@@ -12,9 +13,9 @@ export const HeroSection = styled.section`
   background: linear-gradient(
       to bottom,
       rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 0) 40%
+      rgba(255, 255, 255, 0) 20%
     ),
-    url(${backgroundImageMobile}) center/cover no-repeat;
+    url(${backgroundImageMobile}) 40% / cover no-repeat;
   display: flex;
   flex-direction: column;
   color: #fff;
@@ -44,11 +45,13 @@ export const HeroTitle = styled.h1`
   letter-spacing: 0.05em;
   text-align: right;
   margin-right: 30px;
-
+  line-height: 1.2;
+  display: none;
   color: #664242;
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     font-size: 80px;
+    display: block;
   }
 `;
 
@@ -59,27 +62,12 @@ export const HeroSlogan = styled.p`
   margin-bottom: 70px;
   color: #664242;
   text-align: right;
+  margin-top: 50px;
   margin-right: 30px;
+  display: none;
 
-  @media (max-width: 768px) {
-    font-size: 1rem;
-  }
-`;
-
-export const Button = styled.button`
-  background-color: #ff4d4d;
-  color: #fff;
-  border: none;
-  padding: 15px 30px;
-  font-size: 1rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-
-  &:hover {
-    background-color: #e63939;
+  @media screen and (min-width: 768px) {
+    display: block;
   }
 `;
 
@@ -89,7 +77,8 @@ export const Link = styled(NavLink)`
   border-radius: 50px;
   padding: 20px 50px;
   font-size: 20px;
-  color: #3b3b3b;
+  color: #664242;
+  font-weight: 500;
   letter-spacing: 0.03em;
   transition: all 0.3s ease-in-out;
   background-color: #fafafa;
@@ -110,7 +99,10 @@ export const Link = styled(NavLink)`
     inset -3px -3px 3px 0px rgba(255, 255, 255, 0.8),
     inset 3px 3px 3px 0px rgba(0, 0, 0, 0.2);
 
-  &:hover {
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: #664242;
     box-shadow: -5px -5px 5px 0px rgba(255, 255, 255, 0.8),
       5px 5px 5px 0px rgba(0, 0, 0, 0.2),
       inset -5px -5px 5px 0px rgba(255, 255, 255, 0.8),
@@ -128,6 +120,13 @@ export const Link = styled(NavLink)`
     transform: translateY(-1px);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 767px) {
+    &.hero {
+      position: absolute;
+      bottom: 150px;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 50%;
+    }
   }
 `;

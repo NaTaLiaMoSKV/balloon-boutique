@@ -1,12 +1,12 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 
-export const BalloonsPage = () => (
-  <div>
-    <h1>Кульки</h1>
-    <Outlet /> 
-  </div>
-);
+// export const BalloonsPage = () => (
+//   <div>
+//     <h1>Кульки</h1>
+//     <Outlet /> 
+//   </div>
+// );
 
 export const ThematicBalloons = () => (
   <div>

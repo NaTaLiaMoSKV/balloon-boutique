@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import { Link } from "components/Hero/Hero.styled";
 
 export const DonationContainer = styled.div`
   background: linear-gradient(
     90deg,
-    rgb(81 61 61) 0%,
+    rgb(122 91 91) 0%,
     rgb(159 116 116) 60%,
     rgb(186 148 148) 100%
   );
@@ -44,5 +45,17 @@ export const DonationText = styled.p`
     & span {
       font-size: 37px;
     }
+  }
+`;
+
+export const DonationLink = styled(Link)`
+  color: #fafafa;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 0px 1px 1px #fff;
   }
 `;

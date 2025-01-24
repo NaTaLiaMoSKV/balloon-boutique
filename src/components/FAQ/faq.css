@@ -7,8 +7,13 @@
   color: #5a4d45; 
   font-size: 35px;
   line-height: 1.2;
+  padding: 0;
   margin-bottom: 30px;
   text-align: center;
+}
+
+.faq__title span {
+  font-weight: 200;
 }
 
 .faq__item {

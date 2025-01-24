@@ -8,7 +8,7 @@
 .header-nav {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
 }
 
 .header-nav__list {
@@ -24,7 +24,7 @@
     text-decoration: none;
 }
 
-.basket-link {
+.cart-link {
     padding: 20px;
     border: #212121;
 }
@@ -45,13 +45,19 @@
         position: fixed;
         top: 0;
         right: 0;
-        width: 60vw;
+        min-width: 60vw;
         height: 100vh;
         padding: 30px;
         background-color: #fafafa;
         z-index: 100;
         transform: translateX(100%);
         transition: transform 0.3s ease-in-out;
+    }
+
+    .mobile-menu__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
 
     .mobile-menu.show {
@@ -74,17 +80,16 @@
 
     .header-nav__list {
         margin-top: 100px;
+        margin-bottom: 25px;
         flex-direction: column;
         gap: 25px;
         font-size: 30px;
     }
 
-    .basket-link {
+    .cart-link {
         position: absolute;
         top: 30px;
         left: 30px;
-
-        /* margin-top: 220px; */
         border: 1px solid black;
     }
 }

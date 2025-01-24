@@ -12,6 +12,7 @@ export const FooterContainer = styled.footer`
 
 export const FooterSection = styled.section`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 30px;
@@ -23,8 +24,8 @@ export const LogoWrapper = styled.div`
   h2 {
     font-size: 40px;
     font-weight: 700;
-    font-size: 70px;
     letter-spacing: 0.05em;
+    line-height: 1.2;
   }
 
   @media screen and (min-width: 1200px) {
@@ -35,7 +36,7 @@ export const LogoWrapper = styled.div`
 `;
 
 export const ContactsWrapper = styled.div`
-  dispaly: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   min-width: 160px;
@@ -43,26 +44,39 @@ export const ContactsWrapper = styled.div`
   font-size: 18px;
 
   a {
+    text-decoration: none;
+    position: relative;
     font-size: smaller;
     font-style: italic;
-    text-decoration: underline;
+    padding-bottom: 2px;
+  }
+
+  a::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #fafafa;
+    transition: transform 0.3s ease, filter 0.3s ease;
   }
 
   a:hover,
   a:focus {
     color: #fff;
-    text-shadow: 0px 1px 3px #fafafa;
+    text-shadow: 0px 1px 3px #fff;
 
-    &::before {
-      transform: scale(1.05);
-      filter: brightness(1.2);
+    &::after {
+      transform: scale(1.07);
+      color: #fff;
     }
   }
 
   @media screen and (min-width: 768px) {
     font-size: 22px;
     min-width: 200px;
-    gap: 20px;
+    gap: 10px;
   }
 `;
 

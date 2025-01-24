@@ -15,15 +15,13 @@ export const ReviewsWrapper = styled.section`
   }
 
   @media screen and (min-width: 768px) {
-    padding: 40px 0 60px;
-
     h2 {
       font-size: 50px;
     }
   }
 
   @media screen and (min-width: 1200px) {
-    padding: 60px 0 80px;
+    padding: 60px 0;
   }
 `;
 
@@ -35,7 +33,7 @@ export const ReviewCard = styled.div`
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 
   img {
@@ -55,7 +53,7 @@ export const ReviewCard = styled.div`
   .rating {
     margin: 10px 0;
     font-size: 16px;
-    color: #c39898;
+    color: #925d5d;
   }
 
   p {
@@ -101,7 +99,6 @@ export const NavigationButton = styled.button`
   bottom: 50%;
   transform: translateY(50%);
   z-index: 10;
-  background-color: #fafafa;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -115,7 +112,7 @@ export const NavigationButton = styled.button`
   }
 
   &.swiper-button-prev::after {
-    color: #c39898;
+    color: #925d5d;
     font-weight: 900;
     font-size: 25px;
   }
@@ -125,7 +122,7 @@ export const NavigationButton = styled.button`
   }
 
   &.swiper-button-next::after {
-    color: #c39898;
+    color: #925d5d;
     font-weight: 900;
     font-size: 25px;
   }
