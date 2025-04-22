@@ -126,9 +126,16 @@ export const TableColumn = styled.div`
 export const ProductImage = styled.img`
   border-radius: 20px;
 
+  &:hover {
+    cursor: zoom-in;
+  }
+
   @media screen and (min-width: 768px) {
     max-height: 200px;
     object-fit: cover;
+    &:hover {
+      cursor: zoom-in;
+    }
   }
 `;
 

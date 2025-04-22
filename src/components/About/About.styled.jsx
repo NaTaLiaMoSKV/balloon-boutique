@@ -50,7 +50,7 @@ export const AboutUsContainer = styled.div`
             width: 100%;
         }
         
-        & p {
+        & .about {
             font-size: 14px;
         }
     }
@@ -59,6 +59,18 @@ export const AboutUsContainer = styled.div`
         max-width: 500px;
     }
 
+`
+
+export const AddressText = styled.p`
+    margin-top: 15px;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+    }
 `
 
 export const AboutAdvantagesList = styled.ul`

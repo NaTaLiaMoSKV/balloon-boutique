@@ -1,3 +1,4 @@
+import { AddressText } from "components/About/About.styled"
 import { ContactsWrapper, CopyrightText, FooterContainer, FooterSection, LogoWrapper } from "./Footer.styled"
 
 
@@ -7,6 +8,7 @@ export const Footer = () => {
             <FooterSection>
                 <LogoWrapper>
                     <h2>The Balloon Boutique</h2>
+                    <AddressText>вул. Рішельєвська, 67, Одеса</AddressText>
                 </LogoWrapper>
                 <ContactsWrapper>
                     <p>Менеджер Аліна</p>

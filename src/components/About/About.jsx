@@ -1,15 +1,16 @@
-import { AboutAdvantagesItem, AboutAdvantagesList, AboutSection, AboutUsContainer } from "./About.styled"
+import { AboutAdvantagesItem, AboutAdvantagesList, AboutSection, AboutUsContainer, AddressText } from "./About.styled"
 
 export const About = () => {
     return (
         <AboutSection>
             <AboutUsContainer>
                 <h2>Про нас</h2>
-                <p>
+                <p className="about">
                     У нашому магазині ви знайдете унікальні та яскраві кулі для будь-якої події.
                     Ми пропонуємо широкий асортимент, швидку доставку та індивідуальний підхід,
                     щоб ваше свято було незабутнім!
                 </p>
+                <AddressText>Нова адреса магазину: вул. Рішельєвська, 67</AddressText>
             </AboutUsContainer>
             <AboutAdvantagesList>
                 <AboutAdvantagesItem>

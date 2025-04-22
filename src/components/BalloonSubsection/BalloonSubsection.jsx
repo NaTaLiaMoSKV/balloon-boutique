@@ -10,12 +10,13 @@ import { ukrTitles } from "data/ukrTitle";
 import cartAddImg from 'images/cart-add.png';
 import menuImg from 'images/menu.png';
 import { formatNumber } from "utils/formatNumber";
+import BalloonImageModal from "./BalloonImageModal";
 
 export const BalloonSubsection = () => {
   const { section, title } = useParams();
   const { cart, dispatch } = useCart();
+  const [selectedImage, setSelectedImage] = useState(null);
   const { pathname } = useLocation();
-  // console.log(pathname)
   const navigate = useNavigate();
 
   const dataArray = data[section]?.[title];
@@ -77,6 +78,12 @@ export const BalloonSubsection = () => {
     });
   };
 
+  const handleCardClick = (balloonImage) => {
+    if (window.innerWidth > 768) {
+      setSelectedImage(balloonImage);
+    }
+  };
+
   return (
     <>
       <Header />
@@ -106,7 +113,7 @@ export const BalloonSubsection = () => {
         <BalloonSubsectionCardWrapper>
           {filteredBalloons.map((balloon) => (
             <BalloonSubsectionCard key={balloon.id} id={balloon.id}>
-              <img src={balloon.image} alt={balloon.title} />
+              <img src={balloon.image} alt={balloon.title} onClick={() => handleCardClick(balloon.image)} />
               <div>
                 <BalloonTitleWrapper>
                   <h5>{balloon.title}</h5>
@@ -141,7 +148,11 @@ export const BalloonSubsection = () => {
                 </AddToCartButton>
               </BalloonCardInfoWrapper>
             </BalloonSubsectionCard>
+            
           ))}
+          {selectedImage && (
+            <BalloonImageModal image={selectedImage} onClose={() => setSelectedImage(null)} />
+          )}
         </BalloonSubsectionCardWrapper>
       </BalloonSubsectionWrapper>
     </>

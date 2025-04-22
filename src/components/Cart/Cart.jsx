@@ -14,11 +14,13 @@ import deleteImg from 'images/delete.png'
 import closeImg from 'images/close.png'
 import { useNavigate } from "react-router-dom";
 import { formOrder } from "utils/formOrder";
+import BalloonImageModal from "components/BalloonSubsection/BalloonImageModal";
 
 export const Cart = () => {
     const { cart, dispatch } = useCart();
     const totalPrice = calculateTotalPrice(cart);
     const [modalOpen, setModalOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState(null);
     const [currentInscription, setCurrentInscription] = useState('');
     const [selectedBalloonId, setSelectedBalloonId] = useState(null);
     const [counts, setCounts] = useState({});
@@ -105,6 +107,13 @@ export const Cart = () => {
         }
     };
 
+    const handleCardClick = (balloonImage) => {
+        if (window.innerWidth > 768) {
+        setSelectedImage(balloonImage);
+        }
+    };
+
+
     return (
         <>
             <Header />
@@ -180,7 +189,7 @@ export const Cart = () => {
                                 {cart.map((item) => (
                                     <TableRow key={item.balloon.id}>
                                     <TableColumn className="photo-column">
-                                        <ProductImage src={item.balloon.image} alt={item.balloon.title} />
+                                        <ProductImage src={item.balloon.image} alt={item.balloon.title} onClick={() => handleCardClick(item.balloon.image)}  />
                                     </TableColumn>
                                     <TableColumn className="info-column">
                                         <div className="title-wrapper">
@@ -236,6 +245,9 @@ export const Cart = () => {
                                     </TableRow>
                                 ))}
                             </TableContainer>
+                            {selectedImage && (
+                                <BalloonImageModal image={selectedImage} onClose={() => setSelectedImage(null)} />
+                            )}
                             <TotalContainer>
                                 <TotalWrapper>
                                     <p>Всього: </p>

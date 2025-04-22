@@ -119,6 +119,10 @@ export const BalloonSubsectionCard = styled.div`
     img {
       height: 300px;
     }
+
+    img:hover {
+      cursor: zoom-in;
+    }
   }
 `;
 
