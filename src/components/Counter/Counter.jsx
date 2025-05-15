@@ -1,5 +1,9 @@
 import { useState } from "react";
-import { CounterWrapper, CounterButton, CounterDisplay } from "../BalloonSubsection/BalloonSubsection.styled";
+import {
+  CounterWrapper,
+  CounterButton,
+  CounterDisplay,
+} from "../BalloonSubsection/BalloonSubsection.styled";
 
 export const Counter = ({ initialCount = 1, onChange }) => {
   const [count, setCount] = useState(initialCount);

@@ -1,5 +1,7 @@
 import { calculateTotalPrice } from "./calculateTotalPrice";
 
+// MESSAGE FOR TELEGRAM BOT
+
 export const formOrder = (cart) => {
   if (!cart || !cart.length) return "<b>Кошик порожній</b>";
 
@@ -33,7 +35,5 @@ export const formOrder = (cart) => {
   const totalSum = calculateTotalPrice(cart);
 
   message += `<b>💳 Загальна сума до оплати:</b> ${totalSum} ₴`;
-
-  console.log(message);
-  //   return message;
+  return message;
 };

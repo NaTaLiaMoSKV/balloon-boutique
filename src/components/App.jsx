@@ -1,10 +1,10 @@
-import { Routes, Route } from 'react-router-dom';
-import MainPage from 'pages/MainPage/MainPage';
-import React from 'react';
-import { BalloonsPage } from 'pages/BalloonsPage/BalloonsPage';
-import { BalloonSubsection } from './BalloonSubsection/BalloonSubsection';
-import { Cart } from './Cart/Cart';
-import { UserForm } from './UserForm/UserForm';
+import { Routes, Route } from "react-router-dom";
+import MainPage from "pages/MainPage/MainPage";
+import React from "react";
+import { BalloonsPage } from "pages/BalloonsPage/BalloonsPage";
+import { BalloonSubsection } from "./BalloonSubsection/BalloonSubsection";
+import { Cart } from "./Cart/Cart";
+import { UserForm } from "./UserForm/UserForm";
 
 export const App = () => {
   return (
@@ -14,10 +14,7 @@ export const App = () => {
 
       {/* Balloons */}
       <Route path="/balloons" element={<BalloonsPage />} />
-        <Route 
-            path="/balloons/:section/:title" 
-            element={<BalloonSubsection />} 
-        />
+      <Route path="/balloons/:section/:title" element={<BalloonSubsection />} />
       {/* Shopping Cart */}
       <Route path="cart" element={<Cart />} />
 

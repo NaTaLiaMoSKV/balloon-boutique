@@ -1,319 +1,317 @@
 {
   "thematic": {
     "birthday": [
-        {
-          "id": 101,
-          "title": "Набір №1 на День народження",
-          "price": 1650,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733847747/1_pjuaqe.jpg"
-        },
-        {
-          "id": 102,
-          "title": "Набір №2 на День народження",
-          "price": 2200,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733847747/2_bisllq.jpg"
-        },
-        {
-          "id": 103,
-          "title": "Набір №3 на День народження",
-          "price": 1100,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733847748/3_sddnut.jpg"
-        },
-        {
-          "id": 104,
-          "title": "Набір №4 на День народження",
-          "price": 1300,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733847748/4_d157zg.jpg"
-        },
-        {
-          "id": 105,
-          "title": "Набір №5 на День народження",
-          "price": 1500,
-          "image": " https://res.cloudinary.com/dnzakznor/image/upload/v1733847748/5_ajeug1.jpg"
-        },
-        {
-          "id": 106,
-          "title": "Набір №6 на День народження",
-          "price": 1100,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733847748/6_bzvz4a.jpg"
-        },
-        {
-          "id": 107,
-          "title": "Набір №7 на День народження",
-          "price": 1200,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733847748/7_eydd3i.jpg"
-        },
-        {
-          "id": 108,
-          "title": "Набір №8 на День народження",
-          "price": 1800,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733847749/8_mnzpf4.jpg"
-        },
-        {
-          "id": 109,
-          "title": "Набір №9 на День народження",
-          "price": 800,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733847749/9_cfi5pv.jpg"
-        },
-        {
-          "id": 110,
-          "title": "Набір №10 на День народження",
-          "price": 1500,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733847750/10_zhs8kw.jpg"
-        }
-      ]
-    ,
+      {
+        "id": 101,
+        "title": "Набір №1 на День народження",
+        "price": 1650,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733847747/1_pjuaqe.jpg"
+      },
+      {
+        "id": 102,
+        "title": "Набір №2 на День народження",
+        "price": 2200,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733847747/2_bisllq.jpg"
+      },
+      {
+        "id": 103,
+        "title": "Набір №3 на День народження",
+        "price": 1100,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733847748/3_sddnut.jpg"
+      },
+      {
+        "id": 104,
+        "title": "Набір №4 на День народження",
+        "price": 1300,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733847748/4_d157zg.jpg"
+      },
+      {
+        "id": 105,
+        "title": "Набір №5 на День народження",
+        "price": 1500,
+        "image": " https://res.cloudinary.com/dnzakznor/image/upload/v1733847748/5_ajeug1.jpg"
+      },
+      {
+        "id": 106,
+        "title": "Набір №6 на День народження",
+        "price": 1100,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733847748/6_bzvz4a.jpg"
+      },
+      {
+        "id": 107,
+        "title": "Набір №7 на День народження",
+        "price": 1200,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733847748/7_eydd3i.jpg"
+      },
+      {
+        "id": 108,
+        "title": "Набір №8 на День народження",
+        "price": 1800,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733847749/8_mnzpf4.jpg"
+      },
+      {
+        "id": 109,
+        "title": "Набір №9 на День народження",
+        "price": 800,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733847749/9_cfi5pv.jpg"
+      },
+      {
+        "id": 110,
+        "title": "Набір №10 на День народження",
+        "price": 1500,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733847750/10_zhs8kw.jpg"
+      }
+    ],
     "discharge": [
-        {
-          "id": 111,
-          "title": "Набір №1 на виписку",
-          "price": 1200,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848322/1_b1ywya.jpg"
-        },
-        {
-          "id": 112,
-          "title": "Набір №2 на виписку",
-          "price": 1500,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848323/2_zdbqwy.jpg"
-        },
-        {
-          "id": 113,
-          "title": "Набір №3 на виписку",
-          "price": 1300,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848323/3_u5iakf.jpg"
-        },
-        {
-          "id": 114,
-          "title": "Набір №4 на виписку",
-          "price": 1700,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848324/4_xpei52.jpg"
-        },
-        {
-          "id": 115,
-          "title": "Набір №5 на виписку",
-          "price": 1900,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848324/5_soj2tv.jpg"
-        },
-        {
-          "id": 116,
-          "title": "Набір №6 на виписку",
-          "price": 2700,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848325/6_q8qkmy.jpg"
-        },
-        {
-          "id": 117,
-          "title": "Набір №7 на виписку",
-          "price": 1500,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848326/7_f0nqtz.jpg"
-        },
-        {
-          "id": 118,
-          "title": "Набір №8 на виписку",
-          "price": 1300,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848327/8_yigbzj.jpg"
-        },
-        {
-          "id": 119,
-          "title": "Набір №9 на виписку",
-          "price": 1500,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848328/9_yauscp.jpg"
-        },
-        {
-          "id": 120,
-          "title": "Набір №10 на виписку",
-          "price": 2300,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848329/10_lsy2yh.jpg"
-        }
-      ]
-    ,
-    "new-year":  [
-        {
-          "id": 121,
-          "title": "Набір №1 на Новий рік",
-          "price": 1500,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848429/1_gieklm.jpg"
-        },
-        {
-          "id": 122,
-          "title": "Набір №2 на Новий рік",
-          "price": 900,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848430/2_u6seb6.jpg"
-        },
-        {
-          "id": 123,
-          "title": "Набір №3 на Новий рік",
-          "price": 2000,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848432/3_aaxwyf.jpg"
-        },
-        {
-          "id": 124,
-          "title": "Набір №4 на Новий рік",
-          "price": 750,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848433/4_em8ofs.jpg"
-        },
-        {
-          "id": 125,
-          "title": "Набір №5 на Новий рік",
-          "price": 1500,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848434/5_zjq53c.jpg"
-        },
-        {
-          "id": 126,
-          "title": "Набір №6 на Новий рік",
-          "price": 1300,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848436/6_g0bgks.jpg"
-        },
-        {
-          "id": 127,
-          "title": "Набір №7 на Новий рік",
-          "price": 1000,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848437/7_bzcvwl.jpg"
-        },
-        {
-          "id": 128,
-          "title": "Набір №8 на Новий рік",
-          "price": 1300,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848439/8_lsm5u2.jpg"
-        },
-        {
-          "id": 129,
-          "title": "Набір №9 на Новий рік",
-          "price": 1300,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848440/9_a8m6na.jpg"
-        },
-        {
-          "id": 130,
-          "title": "Набір №10 на Новий рік",
-          "price": 1500,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848441/10_wips7q.jpg"
-        }
-      ],
+      {
+        "id": 111,
+        "title": "Набір №1 на виписку",
+        "price": 1200,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848322/1_b1ywya.jpg"
+      },
+      {
+        "id": 112,
+        "title": "Набір №2 на виписку",
+        "price": 1500,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848323/2_zdbqwy.jpg"
+      },
+      {
+        "id": 113,
+        "title": "Набір №3 на виписку",
+        "price": 1300,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848323/3_u5iakf.jpg"
+      },
+      {
+        "id": 114,
+        "title": "Набір №4 на виписку",
+        "price": 1700,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848324/4_xpei52.jpg"
+      },
+      {
+        "id": 115,
+        "title": "Набір №5 на виписку",
+        "price": 1900,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848324/5_soj2tv.jpg"
+      },
+      {
+        "id": 116,
+        "title": "Набір №6 на виписку",
+        "price": 2700,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848325/6_q8qkmy.jpg"
+      },
+      {
+        "id": 117,
+        "title": "Набір №7 на виписку",
+        "price": 1500,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848326/7_f0nqtz.jpg"
+      },
+      {
+        "id": 118,
+        "title": "Набір №8 на виписку",
+        "price": 1300,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848327/8_yigbzj.jpg"
+      },
+      {
+        "id": 119,
+        "title": "Набір №9 на виписку",
+        "price": 1500,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848328/9_yauscp.jpg"
+      },
+      {
+        "id": 120,
+        "title": "Набір №10 на виписку",
+        "price": 2300,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848329/10_lsy2yh.jpg"
+      }
+    ],
+    "new-year": [
+      {
+        "id": 121,
+        "title": "Набір №1 на Новий рік",
+        "price": 1500,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848429/1_gieklm.jpg"
+      },
+      {
+        "id": 122,
+        "title": "Набір №2 на Новий рік",
+        "price": 900,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848430/2_u6seb6.jpg"
+      },
+      {
+        "id": 123,
+        "title": "Набір №3 на Новий рік",
+        "price": 2000,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848432/3_aaxwyf.jpg"
+      },
+      {
+        "id": 124,
+        "title": "Набір №4 на Новий рік",
+        "price": 750,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848433/4_em8ofs.jpg"
+      },
+      {
+        "id": 125,
+        "title": "Набір №5 на Новий рік",
+        "price": 1500,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848434/5_zjq53c.jpg"
+      },
+      {
+        "id": 126,
+        "title": "Набір №6 на Новий рік",
+        "price": 1300,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848436/6_g0bgks.jpg"
+      },
+      {
+        "id": 127,
+        "title": "Набір №7 на Новий рік",
+        "price": 1000,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848437/7_bzcvwl.jpg"
+      },
+      {
+        "id": 128,
+        "title": "Набір №8 на Новий рік",
+        "price": 1300,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848439/8_lsm5u2.jpg"
+      },
+      {
+        "id": 129,
+        "title": "Набір №9 на Новий рік",
+        "price": 1300,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848440/9_a8m6na.jpg"
+      },
+      {
+        "id": 130,
+        "title": "Набір №10 на Новий рік",
+        "price": 1500,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848441/10_wips7q.jpg"
+      }
+    ],
     "valentine": [
-        {
-          "id": 131,
-          "title": "Набір №1 на 8 березня",
-          "price": 1700,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848358/1_bxyn6g.jpg"
-        },
-        {
-          "id": 132,
-          "title": "Набір №2 на 8 березня",
-          "price": 1100,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848358/2_jvoic2.jpg"
-        },
-        {
-          "id": 133,
-          "title": "Набір №3 на 8 березня",
-          "price": 1100,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848359/3_d5qxp7.jpg"
-        },
-        {
-          "id": 134,
-          "title": "Набір №4 на 8 березня",
-          "price": 1900,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848360/4_w88qye.jpg"
-        },
-        {
-          "id": 135,
-          "title": "Набір №5 на 8 березня",
-          "price": 1200,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848361/5_gl1gj5.jpg"
-        },
-        {
-          "id": 136,
-          "title": "Набір №1 на День закоханих",
-          "price": 1100,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848362/6_jgclzr.jpg"
-        },
-        {
-          "id": 137,
-          "title": "Набір №2 на День закоханих",
-          "price": 1000,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848363/7_tmyxu7.jpg"
-        },
-        {
-          "id": 138,
-          "title": "Набір №3 на День закоханих",
-          "description": "15 кульок",
-          "price": 2700,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848364/8_mrcgx7.jpg"
-        },
-        {
-          "id": 139,
-          "title": "Набір №4 на День закоханих",
-          "price": 900,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848365/9_pojgvm.jpg"
-        },
-        {
-          "id": 140,
-          "title": "Набір №5 на День закоханих",
-          "price": 850,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848366/10_v2cabh.jpg"
-        }
-      ],
-     "gender-party":  [
-        {
-          "id": 141,
-          "title": "Набір №1 на гендер-паті",
-          "price": 3000,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848402/1_diohrm.jpg"
-        },
-        {
-          "id": 142,
-          "title": "Набір №2 на гендер-паті",
-          "price": 2600,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848403/2_ulhtsr.jpg"
-        },
-        {
-          "id": 143,
-          "title": "Набір №3 на гендер-паті",
-          "price": 2200,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848404/3_jwvdfd.jpg"
-        },
-        {
-          "id": 144,
-          "title": "Набір №4 на гендер-паті",
-          "price": 2700,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848405/4_gati8z.jpg"
-        },
-        {
-          "id": 145,
-          "title": "Набір №5 на гендер-паті",
-          "price": 3700,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848406/5_nbohub.jpg"
-        },
-        {
-          "id": 146,
-          "title": "Набір №6 на гендер-паті",
-          "price": 2600,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848407/6_ttmffq.jpg"
-        },
-        {
-          "id": 147,
-          "title": "Набір №7 на гендер-паті",
-          "price": 2400,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848409/7_vig4y5.jpg"
-        },
-        {
-          "id": 148,
-          "title": "Набір №8 на гендер-паті",
-          "price": 900,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848410/8_fxyd4k.jpg"
-        },
-        {
-          "id": 149,
-          "title": "Набір №9 на гендер-паті",
-          "price": 2800,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848411/9_jqszai.jpg"
-        },
-        {
-          "id": 150,
-          "title": "Набір №10 на гендер-паті",
-          "price": 2300,
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848413/10_qykdpo.jpg"
-        }
-      ]
-    },
+      {
+        "id": 131,
+        "title": "Набір №1 на 8 березня",
+        "price": 1700,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848358/1_bxyn6g.jpg"
+      },
+      {
+        "id": 132,
+        "title": "Набір №2 на 8 березня",
+        "price": 1100,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848358/2_jvoic2.jpg"
+      },
+      {
+        "id": 133,
+        "title": "Набір №3 на 8 березня",
+        "price": 1100,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848359/3_d5qxp7.jpg"
+      },
+      {
+        "id": 134,
+        "title": "Набір №4 на 8 березня",
+        "price": 1900,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848360/4_w88qye.jpg"
+      },
+      {
+        "id": 135,
+        "title": "Набір №5 на 8 березня",
+        "price": 1200,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848361/5_gl1gj5.jpg"
+      },
+      {
+        "id": 136,
+        "title": "Набір №1 на День закоханих",
+        "price": 1100,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848362/6_jgclzr.jpg"
+      },
+      {
+        "id": 137,
+        "title": "Набір №2 на День закоханих",
+        "price": 1000,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848363/7_tmyxu7.jpg"
+      },
+      {
+        "id": 138,
+        "title": "Набір №3 на День закоханих",
+        "description": "15 кульок",
+        "price": 2700,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848364/8_mrcgx7.jpg"
+      },
+      {
+        "id": 139,
+        "title": "Набір №4 на День закоханих",
+        "price": 900,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848365/9_pojgvm.jpg"
+      },
+      {
+        "id": 140,
+        "title": "Набір №5 на День закоханих",
+        "price": 850,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848366/10_v2cabh.jpg"
+      }
+    ],
+    "gender-party": [
+      {
+        "id": 141,
+        "title": "Набір №1 на гендер-паті",
+        "price": 3000,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848402/1_diohrm.jpg"
+      },
+      {
+        "id": 142,
+        "title": "Набір №2 на гендер-паті",
+        "price": 2600,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848403/2_ulhtsr.jpg"
+      },
+      {
+        "id": 143,
+        "title": "Набір №3 на гендер-паті",
+        "price": 2200,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848404/3_jwvdfd.jpg"
+      },
+      {
+        "id": 144,
+        "title": "Набір №4 на гендер-паті",
+        "price": 2700,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848405/4_gati8z.jpg"
+      },
+      {
+        "id": 145,
+        "title": "Набір №5 на гендер-паті",
+        "price": 3700,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848406/5_nbohub.jpg"
+      },
+      {
+        "id": 146,
+        "title": "Набір №6 на гендер-паті",
+        "price": 2600,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848407/6_ttmffq.jpg"
+      },
+      {
+        "id": 147,
+        "title": "Набір №7 на гендер-паті",
+        "price": 2400,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848409/7_vig4y5.jpg"
+      },
+      {
+        "id": 148,
+        "title": "Набір №8 на гендер-паті",
+        "price": 900,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848410/8_fxyd4k.jpg"
+      },
+      {
+        "id": 149,
+        "title": "Набір №9 на гендер-паті",
+        "price": 2800,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848411/9_jqszai.jpg"
+      },
+      {
+        "id": 150,
+        "title": "Набір №10 на гендер-паті",
+        "price": 2300,
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733848413/10_qykdpo.jpg"
+      }
+    ]
+  },
   "latex": {
     "without-patterns": {
       "usual": [
@@ -3027,7 +3025,6 @@
           "price": 180,
           "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733952038/36_ielaew.jpg"
         }
-
       ],
       "sphere": [
         {
@@ -3765,106 +3762,105 @@
           "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733952984/34_cxbxov.jpg"
         }
       ]
-
     },
     "words": [
-       {
-          "id": 801,
-          "title": "Літери 'Happy Birthday' золоті + Набор кульок",
-          "price": 570,
-          "description": "фольга + латекс",
-          "longDescription": "У наборі: літери (41 см), 2 фольговані сфери (46 см), 2 зірки (46 см), 1 серце (46 см) та 5 латексних куль золотистого кольору, 2 зірки (46 см) та 5 латексних куль чорного кольору.",
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733953005/1_hkpjlz.jpg"
-        },
-       {
-          "id": 802,
-          "title": "Літери 'Happy Birthday' рожево-золоті",
-          "price": 530,
-          "description": "фольга + латекс",
-          "longDescription": "У наборі: літери (41 см), 2 серця кольору рожеве золото (46 см), 2 зірки білого кольору (46 см), 5 латексних куль рожевого кольору та 5 прозорих з круглим конфетті.",
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733953010/2_i6gkii.jpg"
-        },
-       {
-          "id": 803,
-          "title": "Літери 'Boy' блакитні, 67x29см",
-          "price": 190,
-          "description": "Виробник – PartyDeco (Польща)",
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733953016/3_vrf1jf.jpg"
-        },
-       {
-          "id": 804,
-          "title": "Літери 'Girl' рожеві, 74x33см",
-          "price": 190,
-          "description": "Виробник – PartyDeco (Польща)",
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733953021/4_h7bmvm.jpg"
-        },
-       {
-          "id": 805,
-          "title": "Літери 'Baby' рожеві, 73.5x75.5см",
-          "price": 190,
-          "description": "Виробник – PartyDeco (Польща)",
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733953026/5_tvzdjv.jpg"
-        },
-       {
-          "id": 806,
-          "title": "Літери 'Baby' золоті, 73.5x75.5см",
-          "price": 190,
-          "description": "Виробник – PartyDeco (Польща)",
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733953031/6_aiys2q.jpg"
-        },
-       {
-          "id": 807,
-          "title": "Літери 'Girl' рожеві, 77х70см",
-          "price": 190,
-          "description": "Виробник – PartyDeco (Польща)",
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733953037/7_sjydbv.jpg"
-        },
-       {
-          "id": 808,
-          "title": "Літери 'Girl' золоті, 77х70см",
-          "price": 190,
-          "description": "Виробник – PartyDeco (Польща)",
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733953042/8_mcju7l.jpg"
-        },
-       {
-          "id": 809,
-          "title": "Літери 'Happy Birthday' різнокольорові, 340x35см",
-          "price": 280,
-          "description": "Виробник – PartyDeco (Польща)",
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733953048/9_h64lnl.jpg"
-        },
-       {
-          "id": 810,
-          "title": "Літери 'Happy Birthday' райдужні, 340x35см",
-          "price": 280,
-          "description": "Виробник – PartyDeco (Польща)",
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733953053/10_dedvcn.jpg"
-        },
-       {
-          "id": 811,
-          "title": "Літери 'Happy Birthday' срібні, 340x35см",
-          "price": 280,
-          "description": "Виробник – PartyDeco (Польща)",
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733953059/11_dxlfa5.jpg"
-        },
-       {
-          "id": 812,
-          "title": "Літери 'Happy Birthday' золоті, 340x35см",
-          "price": 280,
-          "description": "Виробник – PartyDeco (Польща)",
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733953064/12_hz7vh2.jpg"
-        },
-       {
-          "id": 813,
-          "title": "Літери 'Happy Birthday' рожево-золоті, 340x35см",
-          "price": 280,
-          "description": "Виробник – PartyDeco (Польща)",
-          "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733953069/13_jbbxi3.jpg"
-        }
+      {
+        "id": 801,
+        "title": "Літери 'Happy Birthday' золоті + Набор кульок",
+        "price": 570,
+        "description": "фольга + латекс",
+        "longDescription": "У наборі: літери (41 см), 2 фольговані сфери (46 см), 2 зірки (46 см), 1 серце (46 см) та 5 латексних куль золотистого кольору, 2 зірки (46 см) та 5 латексних куль чорного кольору.",
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733953005/1_hkpjlz.jpg"
+      },
+      {
+        "id": 802,
+        "title": "Літери 'Happy Birthday' рожево-золоті",
+        "price": 530,
+        "description": "фольга + латекс",
+        "longDescription": "У наборі: літери (41 см), 2 серця кольору рожеве золото (46 см), 2 зірки білого кольору (46 см), 5 латексних куль рожевого кольору та 5 прозорих з круглим конфетті.",
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733953010/2_i6gkii.jpg"
+      },
+      {
+        "id": 803,
+        "title": "Літери 'Boy' блакитні, 67x29см",
+        "price": 190,
+        "description": "Виробник – PartyDeco (Польща)",
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733953016/3_vrf1jf.jpg"
+      },
+      {
+        "id": 804,
+        "title": "Літери 'Girl' рожеві, 74x33см",
+        "price": 190,
+        "description": "Виробник – PartyDeco (Польща)",
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733953021/4_h7bmvm.jpg"
+      },
+      {
+        "id": 805,
+        "title": "Літери 'Baby' рожеві, 73.5x75.5см",
+        "price": 190,
+        "description": "Виробник – PartyDeco (Польща)",
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733953026/5_tvzdjv.jpg"
+      },
+      {
+        "id": 806,
+        "title": "Літери 'Baby' золоті, 73.5x75.5см",
+        "price": 190,
+        "description": "Виробник – PartyDeco (Польща)",
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733953031/6_aiys2q.jpg"
+      },
+      {
+        "id": 807,
+        "title": "Літери 'Girl' рожеві, 77х70см",
+        "price": 190,
+        "description": "Виробник – PartyDeco (Польща)",
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733953037/7_sjydbv.jpg"
+      },
+      {
+        "id": 808,
+        "title": "Літери 'Girl' золоті, 77х70см",
+        "price": 190,
+        "description": "Виробник – PartyDeco (Польща)",
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733953042/8_mcju7l.jpg"
+      },
+      {
+        "id": 809,
+        "title": "Літери 'Happy Birthday' різнокольорові, 340x35см",
+        "price": 280,
+        "description": "Виробник – PartyDeco (Польща)",
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733953048/9_h64lnl.jpg"
+      },
+      {
+        "id": 810,
+        "title": "Літери 'Happy Birthday' райдужні, 340x35см",
+        "price": 280,
+        "description": "Виробник – PartyDeco (Польща)",
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733953053/10_dedvcn.jpg"
+      },
+      {
+        "id": 811,
+        "title": "Літери 'Happy Birthday' срібні, 340x35см",
+        "price": 280,
+        "description": "Виробник – PartyDeco (Польща)",
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733953059/11_dxlfa5.jpg"
+      },
+      {
+        "id": 812,
+        "title": "Літери 'Happy Birthday' золоті, 340x35см",
+        "price": 280,
+        "description": "Виробник – PartyDeco (Польща)",
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733953064/12_hz7vh2.jpg"
+      },
+      {
+        "id": 813,
+        "title": "Літери 'Happy Birthday' рожево-золоті, 340x35см",
+        "price": 280,
+        "description": "Виробник – PartyDeco (Польща)",
+        "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1733953069/13_jbbxi3.jpg"
+      }
     ]
   },
   "other": {
-    "box":[
+    "box": [
       {
         "id": 901,
         "title": "Коробка-сюрприз №1",
@@ -3926,7 +3922,7 @@
         "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050649/10_wwemdo.jpg"
       }
     ],
-    "arch":[
+    "arch": [
       {
         "id": 911,
         "title": "Арка №1",
@@ -4014,70 +4010,70 @@
     ],
     "set": {
       "set-latex": [
-         {
+        {
           "id": 923,
           "title": "'Гендерна вечірка'",
           "description": "Написи (10 шт), 30см",
           "price": 820,
           "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050885/1_sxbsfw.jpg"
         },
-         {
+        {
           "id": 924,
           "title": "'Будь щаслива'",
           "description": "Написи (10 шт), 30см",
           "price": 820,
           "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050892/2_zfyk8q.jpg"
         },
-         {
+        {
           "id": 925,
           "title": "'Тобі немає рівних'",
           "description": "Написи (10 шт), 30см",
           "price": 820,
           "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050899/3_nrnemi.jpg"
         },
-         {
+        {
           "id": 926,
           "title": "'Дякую за синочка'",
           "description": "Блакитний, браш, хром 10 шт, 30см",
           "price": 820,
           "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050906/4_aftfkd.jpg"
         },
-         {
+        {
           "id": 927,
           "title": "'Дякую за донечку'",
           "description": "Рожевий, серця, хром 10 шт, 30см",
           "price": 820,
           "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050913/5_b5nzf0.jpg"
         },
-         {
+        {
           "id": 928,
           "title": "'Ти красунчик'",
           "description": "Написи (10 шт), 30см",
           "price": 820,
           "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050920/6_k2hflm.jpg"
         },
-         {
+        {
           "id": 929,
           "title": "'Happy Birthday' тіффані + білий",
           "description": "10 шт",
           "price": 820,
           "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050927/7_logrtk.jpg"
         },
-         {
+        {
           "id": 930,
           "title": "'Happy Birthday' фіолетовий браш",
           "description": "10 шт",
           "price": 820,
           "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050934/8_wdbstb.jpg"
         },
-         {
+        {
           "id": 931,
           "title": "'Happy Birthday' срібло  з чорним",
           "description": "10 шт",
           "price": 820,
           "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050941/9_onsbto.jpg"
         },
-         {
+        {
           "id": 932,
           "title": "Макарун-браш",
           "description": "10 шт",
@@ -4085,7 +4081,7 @@
           "image": "https://res.cloudinary.com/dnzakznor/image/upload/v1734050948/10_bq6tfe.jpg"
         }
       ],
-      "set-foil":[
+      "set-foil": [
         {
           "id": 933,
           "title": "'First Birthday Boy' блакитний",
@@ -4188,5 +4184,3 @@
     }
   }
 }
-
-

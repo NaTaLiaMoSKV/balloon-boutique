@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
-import { useCart } from 'state/CartContext';
-import cartImg from 'images/basket.png';
+import styled from "styled-components";
+import { NavLink } from "react-router-dom";
+import { useCart } from "state/CartContext";
+import cartImg from "images/basket.png";
 
 const CartButtonStyled = styled.button`
   display: flex;
@@ -52,17 +52,17 @@ const CartButtonStyled = styled.button`
 
 const StyledLink = styled(NavLink)`
   position: relative;
-`
+`;
 
 export const CartButton = () => {
   const { cart } = useCart();
 
   const getTotalQuantity = (cart) => {
-      return cart.reduce((total, item) => total + item.quantity, 0);
+    return cart.reduce((total, item) => total + item.quantity, 0);
   };
 
   const totalQuantity = getTotalQuantity(cart);
-  
+
   return (
     <>
       <StyledLink to="/cart">
@@ -72,5 +72,5 @@ export const CartButton = () => {
         </CartButtonStyled>
       </StyledLink>
     </>
-  )
-}
+  );
+};

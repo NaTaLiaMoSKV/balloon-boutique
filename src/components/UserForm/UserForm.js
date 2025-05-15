@@ -18,12 +18,11 @@ import {
 } from "./UserForm.styled";
 import { Header } from "components/Header/Header";
 import { BackButton } from "components/BalloonSubsection/BalloonSubsection.styled";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { DatePicker, TimePicker } from "rsuite";
 import "rsuite/dist/rsuite.min.css";
 import { calculateTotalPrice } from "utils/calculateTotalPrice";
 import { useCart } from "state/CartContext";
-import { Payment } from "components/Payment/Payment";
 
 const districts = [
   { name: "Аркадія", fee: 200 },
@@ -55,7 +54,7 @@ const SaveToLocalStorage = ({ isInitialLoaded }) => {
 
 export const UserForm = () => {
   const { cart } = useCart();
-  const [sumbitted, setSubmitted] = useState(false);
+  const [setSubmitted] = useState(false);
   const [additionalFee, setAdditionalFee] = useState(0);
   const [initialValues, setInitialValues] = useState(null);
   const [isInitialLoaded, setIsInitialLoaded] = useState(false);
@@ -72,7 +71,8 @@ export const UserForm = () => {
       setInitialValues(JSON.parse(savedData));
     } else {
       setInitialValues({
-        name: "",
+        firstName: "",
+        lastName: "",
         email: "",
         phone: "",
         isOtherRecipient: false,
@@ -120,7 +120,8 @@ export const UserForm = () => {
   };
 
   const validationSchema = Yup.object({
-    name: Yup.string().required("Ім'я є обов'язковим"),
+    firstName: Yup.string().required("Ім'я є обов'язковим"),
+    lastName: Yup.string().required("Прізвище є обов'язковим"),
     email: Yup.string().email("Невірний формат email"),
     phone: Yup.string()
       .matches(
@@ -183,10 +184,8 @@ export const UserForm = () => {
             enableReinitialize
             initialValues={initialValues}
             validationSchema={validationSchema}
-            // onSubmit={handleSubmit}
             ationSchema={validationSchema}
             onSubmit={(values) => {
-              // console.log("Збережені дані:", { ...values, additionalFee });
               setSubmitted(true);
             }}
           >
@@ -199,13 +198,25 @@ export const UserForm = () => {
                     <div>
                       <Field
                         as={Input}
-                        name="name"
-                        autoComplete="name"
+                        name="firstName"
+                        autoComplete="firstName"
                         placeholder="Ім'я"
                         inputMode="text"
                         autoCapitalize="words"
                       />
-                      <ErrorMessage name="name" component={ErrorText} />
+                      <ErrorMessage name="firstName" component={ErrorText} />
+                    </div>
+
+                    <div>
+                      <Field
+                        as={Input}
+                        name="lastName"
+                        autoComplete="lastName"
+                        placeholder="Прізвище"
+                        inputMode="text"
+                        autoCapitalize="words"
+                      />
+                      <ErrorMessage name="lastName" component={ErrorText} />
                     </div>
 
                     <div>
@@ -439,7 +450,7 @@ export const UserForm = () => {
             )}
           </Formik>
         </FormContainer>
-        {sumbitted && <Payment />}
+        {/* {sumbitted && <Payment />} */}
       </section>
     </>
   );

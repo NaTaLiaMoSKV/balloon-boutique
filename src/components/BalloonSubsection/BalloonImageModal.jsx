@@ -36,21 +36,21 @@ const CloseButton = styled.button`
 `;
 
 const BalloonImageModal = ({ image, onClose }) => {
-    useEffect(() => {
-        document.body.style.overflow = "hidden";
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
 
-        const handleKeyDown = (e) => {
-            if (e.key === "Escape") {
-            onClose();
-            }
-        };
-        document.addEventListener("keydown", handleKeyDown);
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") {
+        onClose();
+      }
+    };
+    document.addEventListener("keydown", handleKeyDown);
 
-        return () => {
-            document.body.style.overflow = "";
-            document.removeEventListener("keydown", handleKeyDown);
-        };
-    }, [onClose]);
+    return () => {
+      document.body.style.overflow = "";
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [onClose]);
 
   const handleBackdropClick = (e) => {
     if (e.target === e.currentTarget) {

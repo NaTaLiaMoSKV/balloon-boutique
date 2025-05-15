@@ -40,10 +40,10 @@ export const UserSectionWrapper = styled.div`
     }
 
     &.user-data {
-      flex-wrap: nowrap;
+      // flex-wrap: nowrap;
 
       input {
-        width: 300px;
+        width: 350px;
       }
     }
   }

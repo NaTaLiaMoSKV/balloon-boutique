@@ -1,11 +1,9 @@
 import { useEffect, useState } from "react";
 import logo from "../../images/logo-balloons.png";
-import cart from "../../images/basket.png";
 import burger from "../../images/burger.png";
 import close from "../../images/close.png";
 
 import {
-  CartImage,
   HeaderWrapper,
   LogoImage,
   MobileMenu,
@@ -82,10 +80,9 @@ export const Header = () => {
           <div className="mobile-menu__wrapper">
             <CartButton onClick={closeMenu} />
             <button className="mobile-menu__button" onClick={toggleMenu}>
-            <img src={burger} alt="open menu" />
-          </button>
+              <img src={burger} alt="open menu" />
+            </button>
           </div>
-          
 
           <MobileMenu isOpen={isMenuOpen}>
             <button className="mobile-menu__close" onClick={closeMenu}>
