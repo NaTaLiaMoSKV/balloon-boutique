@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/balloon-boutique/static/css/main.c34cc1f0.css",
-    "main.js": "/balloon-boutique/static/js/main.3570a82d.js",
+    "main.js": "/balloon-boutique/static/js/main.8ca081f0.js",
     "static/media/user7.jpg": "/balloon-boutique/static/media/user7.53f46b50034e635db71d.jpg",
     "static/media/3.jpg": "/balloon-boutique/static/media/3.0e6836971c391e57584f.jpg",
     "static/media/2.jpg": "/balloon-boutique/static/media/2.5dbf6c023f8f08f08de5.jpg",
@@ -40,10 +40,10 @@
     "static/media/with-patterns.jpg": "/balloon-boutique/static/media/with-patterns.d2e140f9cb20b2c36e64.jpg",
     "index.html": "/balloon-boutique/index.html",
     "main.c34cc1f0.css.map": "/balloon-boutique/static/css/main.c34cc1f0.css.map",
-    "main.3570a82d.js.map": "/balloon-boutique/static/js/main.3570a82d.js.map"
+    "main.8ca081f0.js.map": "/balloon-boutique/static/js/main.8ca081f0.js.map"
   },
   "entrypoints": [
     "static/css/main.c34cc1f0.css",
-    "static/js/main.3570a82d.js"
+    "static/js/main.8ca081f0.js"
   ]
 }
